@@ -4,17 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shindy Melani Putri | Portfolio</title>
+  <meta name="description" content="Portofolio Shindy Melani Putri, lulusan D3 Manajemen Informatika dengan minat pada pengembangan aplikasi, pengolahan data, dan administrasi.">
+  <title>Shindy Melani Putri | Portofolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
+  <!-- NAVIGASI -->
   <header>
     <nav class="navbar">
-      <a href="#" class="logo">Shindy<span>.</span></a>
+      <a href="#home" class="logo">Shindy<span>.</span></a>
+
       <div class="nav-links">
-        <a href="#about">Tentang</a>
+        <a href="#about">Tentang Saya</a>
+        <a href="#experience">Pengalaman</a>
+        <a href="#organization">Organisasi</a>
+        <a href="#education">Pendidikan</a>
         <a href="#skills">Keahlian</a>
+        <a href="#certificates">Sertifikat</a>
         <a href="#projects">Proyek</a>
         <a href="#contact">Kontak</a>
       </div>
@@ -22,89 +29,540 @@
   </header>
 
   <main>
-    <section class="hero">
-      <p class="eyebrow">PORTOFOLIO PRIBADI</p>
-      <h1>Halo, saya <span>Shindy Melani Putri.</span></h1>
-      <h2>Lulusan Manajemen Informatika</h2>
-      <p class="intro">
-        Saya tertarik pada pengembangan web, pengolahan data,
-        dan pemanfaatan teknologi untuk membantu pekerjaan
-        menjadi lebih efektif.
-      </p>
-      <a href="#projects" class="btn">Lihat Proyek Saya</a>
-    </section>
+    <!-- HERO / PROFIL UTAMA -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">PORTOFOLIO PROFESIONAL</p>
 
-    <section id="about" class="section">
-      <p class="eyebrow">KENALI SAYA</p>
-      <h2>Tentang Saya</h2>
-      <p>
-        Saya merupakan lulusan D3 Manajemen Informatika
-        Universitas Putra Indonesia YPTK Padang dengan IPK 3,77.
-        Saya memiliki pengalaman magang dalam administrasi dan
-        pengelolaan surat, serta pengalaman mengerjakan proyek
-        aplikasi berbasis teknologi. Saya senang belajar hal baru
-        dan mengembangkan keterampilan untuk dunia kerja.
-      </p>
-    </section>
+        <h1>
+          Halo, saya <span>Shindy Melani Putri.</span>
+        </h1>
 
-    <section id="skills" class="section">
-      <p class="eyebrow">KEMAMPUAN</p>
-      <h2>Keahlian Saya</h2>
-      <div class="skill-list">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>PHP</span>
-        <span>MySQL</span>
-        <span>Flutter</span>
-        <span>Dart</span>
-        <span>Microsoft Office</span>
-        <span>Administrasi Data</span>
+        <h2>
+          Lulusan D3 Manajemen Informatika
+        </h2>
+
+        <p class="intro">
+          Saya memiliki ketertarikan pada pengembangan aplikasi,
+          pengolahan data, dan administrasi perkantoran.
+          Saya senang mempelajari hal baru, mengembangkan
+          keterampilan, serta memanfaatkan teknologi untuk
+          mendukung pekerjaan yang lebih efektif dan terorganisasi.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#about" class="btn">Kenali Saya</a>
+          <a href="#projects" class="btn btn-outline">
+            Lihat Proyek
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img
+          src="images/foto-profil.jpg"
+          alt="Foto profil Shindy Melani Putri"
+          loading="eager"
+        >
       </div>
     </section>
 
+    <!-- TENTANG SAYA -->
+    <section id="about" class="section about-section">
+      <p class="eyebrow">KENALI SAYA LEBIH DEKAT</p>
+      <h2>Tentang Saya</h2>
+
+      <div class="about-grid">
+        <div class="about-photo">
+          <img
+            src="images/foto-tentang.jpg"
+            alt="Dokumentasi pribadi Shindy Melani Putri"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="about-content">
+          <p>
+            Saya merupakan lulusan Program Studi D3 Manajemen
+            Informatika Universitas Putra Indonesia YPTK Padang
+            dengan IPK 3,77 dari 4,00.
+          </p>
+
+          <p>
+            Selama masa pendidikan, saya mengembangkan
+            pengetahuan di bidang teknologi informasi melalui
+            pembelajaran, pengerjaan proyek aplikasi, kegiatan
+            organisasi, dan pengalaman magang.
+          </p>
+
+          <p>
+            Saya memiliki pengalaman dalam administrasi,
+            pengelolaan dokumen, pelayanan, serta pengembangan
+            aplikasi sederhana. Pengalaman tersebut membantu
+            saya mengembangkan ketelitian, tanggung jawab,
+            kemampuan bekerja sama, dan kemauan untuk terus belajar.
+          </p>
+
+          <p>
+            Saya terbuka terhadap kesempatan berkarier di bidang
+            teknologi informasi, administrasi, maupun operasional
+            yang sesuai dengan kemampuan dan latar belakang saya.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENGALAMAN KERJA -->
+    <section id="experience" class="section">
+      <p class="eyebrow">PERJALANAN PROFESIONAL</p>
+      <h2>Pengalaman Kerja dan Magang</h2>
+
+      <p class="section-description">
+        Pengalaman yang membentuk kemampuan saya dalam
+        administrasi, pengolahan dokumen, pelayanan, dan penggunaan
+        teknologi untuk mendukung pekerjaan sehari-hari.
+      </p>
+
+      <div class="experience-list">
+        <article class="experience-card">
+          <div class="experience-photo">
+            <img
+              src="images/magang-bkd.jpg"
+              alt="Dokumentasi kegiatan magang di BKD Provinsi Sumatera Barat"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="experience-content">
+            <p class="card-label">PENGALAMAN MAGANG</p>
+            <h3>Peserta Magang</h3>
+
+            <h4>
+              Badan Kepegawaian Daerah Provinsi Sumatera Barat
+            </h4>
+
+            <p class="experience-period">
+              5–29 Agustus 2025
+            </p>
+
+            <p>
+              Melaksanakan kegiatan magang pada bagian pelayanan
+              dan administrasi surat dengan membantu proses
+              pencatatan, pengelolaan, serta pendistribusian dokumen.
+            </p>
+
+            <ul>
+              <li>
+                Menerima dan mencatat surat masuk melalui sistem
+                internal yang digunakan instansi.
+              </li>
+              <li>
+                Mencetak kartu kendali serta membantu kelengkapan
+                administrasi surat.
+              </li>
+              <li>
+                Mendistribusikan dokumen kepada bagian terkait
+                dan membantu proses pencatatan tanda terima.
+              </li>
+              <li>
+                Membantu pengarsipan dokumen agar tersimpan
+                secara teratur dan mudah ditelusuri.
+              </li>
+            </ul>
+
+            <p class="tech">
+              Administrasi · Pengolahan Data · Pengarsipan
+            </p>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-photo">
+            <img
+              src="images/tb-razaqi-jaya.jpg"
+              alt="Dokumentasi pengalaman kerja di TB Razaqi Jaya"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="experience-content">
+            <p class="card-label">PENGALAMAN KERJA</p>
+            <h3>Staf Layanan Fotokopi</h3>
+
+            <h4>TB Razaqi Jaya</h4>
+
+            <p class="experience-period">
+              Pekerjaan sementara / informal
+            </p>
+
+            <p>
+              Membantu operasional layanan fotokopi dan pengolahan
+              dokumen, termasuk kebutuhan pencetakan serta
+              pengeditan foto sesuai permintaan pelanggan.
+            </p>
+
+            <ul>
+              <li>
+                Mengoperasikan mesin fotokopi dan melakukan
+                pemindaian dokumen.
+              </li>
+              <li>
+                Membantu pengeditan dan pencetakan foto.
+              </li>
+              <li>
+                Melakukan pengetikan dan pengolahan dokumen
+                sesuai kebutuhan pelanggan.
+              </li>
+              <li>
+                Membantu memberikan pelayanan kepada pelanggan
+                secara teliti dan responsif.
+              </li>
+            </ul>
+
+            <p class="tech">
+              Pelayanan · Pengolahan Dokumen · Editing Foto
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ORGANISASI DAN KEGIATAN -->
+    <section id="organization" class="section">
+      <p class="eyebrow">PENGEMBANGAN DIRI</p>
+      <h2>Organisasi dan Kegiatan</h2>
+
+      <p class="section-description">
+        Pengalaman berorganisasi menjadi kesempatan bagi saya
+        untuk belajar berkoordinasi, menjalankan tanggung jawab,
+        dan berkontribusi dalam kegiatan bersama.
+      </p>
+
+      <div class="organization-grid">
+        <article class="organization-card">
+          <img
+            src="images/organisasi-litbang.jpg"
+            alt="Dokumentasi kegiatan Divisi Litbang"
+            loading="lazy"
+          >
+
+          <div class="organization-content">
+            <p class="card-label">HIMPUNAN MAHASISWA</p>
+            <h3>Anggota Divisi Litbang</h3>
+
+            <p>
+              Berpartisipasi dalam kegiatan organisasi Himpunan
+              Manajemen Informatika serta mendukung pelaksanaan
+              kegiatan sesuai tanggung jawab divisi.
+            </p>
+          </div>
+        </article>
+
+        <article class="organization-card">
+          <img
+            src="images/organisasi-psdm.jpg"
+            alt="Dokumentasi kegiatan Divisi PSDM"
+            loading="lazy"
+          >
+
+          <div class="organization-content">
+            <p class="card-label">HIMPUNAN MAHASISWA</p>
+            <h3>Kepala Bagian Divisi PSDM</h3>
+
+            <p>
+              Mengemban tanggung jawab dalam lingkup divisi
+              pengembangan sumber daya manusia, termasuk
+              mendukung koordinasi dan pelaksanaan kegiatan
+              organisasi sesuai tugas yang diberikan.
+            </p>
+          </div>
+        </article>
+
+        <article class="organization-card">
+          <img
+            src="images/kegiatan-bakti-sosial.jpg"
+            alt="Dokumentasi kegiatan bakti sosial"
+            loading="lazy"
+          >
+
+          <div class="organization-content">
+            <p class="card-label">KEGIATAN SOSIAL</p>
+            <h3>Ketua Pelaksana Bakti Sosial</h3>
+
+            <p>
+              Mendapatkan pengalaman dalam mengoordinasikan
+              persiapan dan pelaksanaan kegiatan bakti sosial
+              masyarakat bersama anggota panitia.
+            </p>
+          </div>
+        </article>
+
+        <article class="organization-card">
+          <img
+            src="images/kepanitiaan-hirm.jpg"
+            alt="Dokumentasi kepanitiaan HIRM"
+            loading="lazy"
+          >
+
+          <div class="organization-content">
+            <p class="card-label">KEPANITIAAN</p>
+            <h3>Panitia Konsumsi HIRM</h3>
+
+            <p>
+              Berkontribusi dalam mendukung kebutuhan konsumsi
+              selama pelaksanaan kegiatan HIRM sebagai bagian
+              dari kerja sama tim kepanitiaan.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PENDIDIKAN DAN PENCAPAIAN -->
+    <section id="education" class="section">
+      <p class="eyebrow">LATAR BELAKANG AKADEMIK</p>
+      <h2>Pendidikan dan Pencapaian</h2>
+
+      <div class="education-grid">
+        <article class="education-card">
+          <img
+            src="images/pendidikan-upi.jpg"
+            alt="Dokumentasi pendidikan di Universitas Putra Indonesia YPTK Padang"
+            loading="lazy"
+          >
+
+          <div class="education-content">
+            <p class="card-label">PENDIDIKAN TINGGI</p>
+            <h3>Universitas Putra Indonesia YPTK Padang</h3>
+
+            <p>D3 Manajemen Informatika</p>
+            <p class="experience-period">
+              September 2023 – Agustus 2026
+            </p>
+
+            <div class="achievement-highlight">
+              <span>IPK</span>
+              <strong>3,77 / 4,00</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="achievement-card">
+          <img
+            src="images/pencapaian-akademik.jpg"
+            alt="Dokumentasi pencapaian akademik"
+            loading="lazy"
+          >
+
+          <div class="education-content">
+            <p class="card-label">PENCAPAIAN AKADEMIK</p>
+            <h3>Lulusan Terbaik</h3>
+
+            <p>
+              Pencapaian akademik selama menempuh pendidikan
+              di bidang Manajemen Informatika.
+            </p>
+
+            <p class="experience-period">
+              Universitas Putra Indonesia YPTK Padang
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- KEAHLIAN -->
+    <section id="skills" class="section">
+      <p class="eyebrow">KOMPETENSI</p>
+      <h2>Keahlian Saya</h2>
+
+      <p class="section-description">
+        Keterampilan yang saya kembangkan melalui pendidikan,
+        pengalaman kerja, dan pengerjaan proyek.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Pengembangan Aplikasi</h3>
+          <div class="skill-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>PHP Dasar</span>
+            <span>MySQL Dasar</span>
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>SQLite</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Administrasi dan Pengolahan Data</h3>
+          <div class="skill-list">
+            <span>Microsoft Office</span>
+            <span>Administrasi Data</span>
+            <span>Pengarsipan Dokumen</span>
+            <span>Pengolahan Dokumen</span>
+            <span>Pelayanan Pelanggan</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KURSUS DAN SERTIFIKAT -->
+    <section id="certificates" class="section">
+      <p class="eyebrow">PEMBELAJARAN BERKELANJUTAN</p>
+      <h2>Kursus dan Sertifikat</h2>
+
+      <p class="section-description">
+        Kursus yang saya ikuti untuk memperluas pengetahuan
+        dan mendukung pengembangan keterampilan.
+      </p>
+
+      <div class="certificate-grid">
+        <article class="certificate-card">
+          <img
+            src="images/hcia-opengauss.jpg"
+            alt="Sertifikat kursus HCIA-openGauss V1.0"
+            loading="lazy"
+          >
+
+          <div class="certificate-content">
+            <h3>HCIA-openGauss V1.0 Courses</h3>
+            <p>Huawei ICT Academy</p>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <img
+            src="images/hcip-opengauss.jpg"
+            alt="Sertifikat kursus HCIP-openGauss V1.0"
+            loading="lazy"
+          >
+
+          <div class="certificate-content">
+            <h3>HCIP-openGauss V1.0 Courses</h3>
+            <p>Huawei ICT Academy</p>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <img
+            src="images/hcie-opengauss.jpg"
+            alt="Sertifikat kursus HCIE-openGauss V1.0"
+            loading="lazy"
+          >
+
+          <div class="certificate-content">
+            <h3>HCIE-openGauss V1.0 Courses</h3>
+            <p>Huawei ICT Academy</p>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <img
+            src="images/hp-life.jpg"
+            alt="Sertifikat HP LIFE Data Science and Analytics"
+            loading="lazy"
+          >
+
+          <div class="certificate-content">
+            <h3>Data Science &amp; Analytics</h3>
+            <p>HP LIFE</p>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <img
+            src="images/simplilearn-excel.jpg"
+            alt="Sertifikat Simplilearn Introduction to MS Excel"
+            loading="lazy"
+          >
+
+          <div class="certificate-content">
+            <h3>Introduction to MS Excel</h3>
+            <p>Simplilearn SkillUp</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROYEK -->
     <section id="projects" class="section">
       <p class="eyebrow">HASIL KARYA</p>
       <h2>Proyek Saya</h2>
 
+      <p class="section-description">
+        Beberapa proyek yang saya kembangkan sebagai bagian
+        dari proses belajar dan penerapan pengetahuan
+        teknologi informasi.
+      </p>
+
       <div class="project-grid">
         <article class="project-card">
           <div class="project-number">01 / WEB DEVELOPMENT</div>
+
           <h3>Sistem Absensi dan Jadwal Shift Karyawan</h3>
+
           <p>
             Perancangan sistem berbasis web untuk membantu
             pencatatan kehadiran, pengelolaan jadwal shift,
             dan rekap laporan kehadiran karyawan di Apotek
             Kimia Farma Cabang Cengkeh.
           </p>
+
           <p class="tech">PHP · MySQL · HTML · CSS</p>
         </article>
 
         <article class="project-card">
           <div class="project-number">02 / MOBILE APPLICATION</div>
+
           <h3>PetCare Hub</h3>
+
           <p>
             Aplikasi pemesanan layanan grooming hewan yang
-            dirancang untuk membantu pengguna memilih layanan,
-            membuat pemesanan, dan melihat status booking.
+            dirancang untuk membantu pelanggan memilih paket
+            layanan, membuat pemesanan, dan melihat status
+            booking, dengan fitur pengelolaan sesuai hak akses.
           </p>
+
           <p class="tech">Flutter · Dart · SQLite</p>
         </article>
       </div>
     </section>
 
+    <!-- KONTAK -->
     <section id="contact" class="section contact">
       <p class="eyebrow">MARI TERHUBUNG</p>
       <h2>Hubungi Saya</h2>
-      <p>Terima kasih telah mengunjungi portofolio saya.</p>
-      <p>Email: <span>Tambahkan email profesionalmu di sini</span></p>
-      <p>GitHub: <a href="https://github.com/shindyyptr-maker"
-        target="_blank" rel="noopener noreferrer">Profil GitHub Saya</a></p>
+
+      <p>
+        Terima kasih telah meluangkan waktu untuk mengenal
+        profil dan karya saya. Saya terbuka untuk kesempatan
+        kerja, kolaborasi, dan pengembangan profesional.
+      </p>
+
+      <p>
+        Email:
+        <a href="mailto:shindyyptr@gmail.com">
+          shindyyptr@gmail.com
+        </a>
+      </p>
+
+      <p>
+        GitHub:
+        <a
+          href="https://github.com/shindyyptr-maker"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Profil GitHub Saya</a>
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Shindy Melani Putri. Dibuat dengan HTML & CSS.</p>
+    <p>
+      © 2026 Shindy Melani Putri. Dibuat dengan HTML &amp; CSS.
+    </p>
   </footer>
-
 </body>
 </html>
