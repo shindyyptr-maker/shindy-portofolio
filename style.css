@@ -103,29 +103,30 @@ header {
 }
 
 /* ========================================
-   3. BAGIAN UTAMA / HERO
+   3. HERO / HALAMAN PEMBUKA
 ======================================== */
 .hero {
   max-width: 1160px;
-  min-height: 460px;
-  margin: 32px auto;
-  padding: 60px 52px;
+  min-height: 0;
+  margin: 28px auto;
+  padding: 42px 45px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   background: linear-gradient(135deg, #173b57, #245e78);
   color: #ffffff;
-  border-radius: 26px;
+  border-radius: 24px;
   box-shadow: 0 16px 40px rgba(23, 59, 87, 0.13);
   overflow: hidden;
 }
 
 .profile-image {
-  width: 155px;
-  height: 155px;
-  margin-bottom: 25px;
-  border: 5px solid rgba(255, 255, 255, 0.8);
+  width: 110px;
+  height: 110px;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  border: 4px solid rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.15);
@@ -153,7 +154,7 @@ header {
 .hero h1 {
   max-width: 800px;
   margin-bottom: 12px;
-  font-size: clamp(30px, 5vw, 48px);
+  font-size: clamp(30px, 5vw, 46px);
   line-height: 1.2;
 }
 
@@ -162,22 +163,22 @@ header {
 }
 
 .hero h2 {
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   color: #dcebf3;
-  font-size: clamp(18px, 2.5vw, 24px);
+  font-size: clamp(18px, 2.5vw, 23px);
   font-weight: 500;
 }
 
 .intro {
   max-width: 680px;
-  margin-bottom: 27px;
+  margin-bottom: 23px;
   color: #e5eef4;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 11px 22px;
   border-radius: 9px;
   background: var(--accent);
   color: #ffffff;
@@ -202,19 +203,19 @@ main {
 .section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 65px 0;
+  padding: 48px 0;
 }
 
 .section h2 {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   color: var(--primary);
-  font-size: clamp(26px, 4vw, 34px);
+  font-size: clamp(26px, 4vw, 32px);
   line-height: 1.3;
 }
 
 .section > p:not(.eyebrow) {
   max-width: 900px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   color: var(--muted);
 }
 
@@ -231,10 +232,10 @@ main {
 ======================================== */
 .about-image {
   width: 100%;
-  max-width: 300px;
+  max-width: 180px;
   aspect-ratio: 4 / 5;
-  margin: 25px 0;
-  border-radius: var(--radius);
+  margin: 20px 0;
+  border-radius: 14px;
   overflow: hidden;
   background: #e6edf2;
   box-shadow: var(--shadow);
@@ -247,7 +248,7 @@ main {
 }
 
 /* ========================================
-   6. KARTU DAN GRID
+   6. GRID DAN KARTU
 ======================================== */
 .project-grid,
 .experience-grid,
@@ -257,8 +258,9 @@ main {
 .activity-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-  margin-top: 28px;
+  align-items: start;
+  gap: 22px;
+  margin-top: 24px;
 }
 
 .project-card,
@@ -268,7 +270,7 @@ main {
 .education-card,
 .activity-card {
   min-width: 0;
-  padding: 24px;
+  padding: 21px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--surface);
@@ -282,8 +284,8 @@ main {
 .certificate-card:hover,
 .education-card:hover,
 .activity-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 15px 35px rgba(23, 59, 87, 0.12);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(23, 59, 87, 0.1);
 }
 
 .project-card h3,
@@ -292,9 +294,9 @@ main {
 .certificate-card h3,
 .education-card h3,
 .activity-card h3 {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   color: var(--primary);
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.45;
 }
 
@@ -304,17 +306,17 @@ main {
 .certificate-card p,
 .education-card p,
 .activity-card p {
-  margin-bottom: 12px;
+  margin-bottom: 11px;
   color: var(--muted);
   font-size: 14px;
 }
 
 .project-number {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   color: var(--accent);
   font-size: 11px;
   font-weight: 800;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.2px;
 }
 
 .date,
@@ -326,8 +328,8 @@ main {
 }
 
 .tech {
-  margin-top: 17px;
-  padding-top: 12px;
+  margin-top: 15px;
+  padding-top: 11px;
   border-top: 1px solid var(--border);
   color: #177a76 !important;
   font-size: 12px !important;
@@ -336,67 +338,73 @@ main {
 
 /* ========================================
    7. FOTO DOKUMENTASI
+   Ukuran kecil dan konsisten
 ======================================== */
 .experience-image,
 .organization-image,
-.certificate-image,
 .project-image,
 .activity-image {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  margin-bottom: 20px;
-  border-radius: 12px;
+  max-width: 220px;
+  height: 145px;
+  margin: 0 auto 16px;
+  border-radius: 10px;
   overflow: hidden;
   background: #e7eef3;
 }
 
 .experience-image img,
 .organization-image img,
-.certificate-image img,
 .project-image img,
 .activity-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: transform 0.35s ease;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
 .experience-card:hover .experience-image img,
 .organization-card:hover .organization-image img,
-.certificate-card:hover .certificate-image img,
 .activity-card:hover .activity-image img {
-  transform: scale(1.035);
+  transform: scale(1.02);
 }
 
-/* Sertifikat perlu terlihat jelas dan tidak terpotong. */
+/* Sertifikat */
 .certificate-image {
-  aspect-ratio: 4 / 3;
+  width: 100%;
+  max-width: 260px;
+  height: 180px;
+  margin: 0 auto 16px;
+  border-radius: 10px;
+  overflow: hidden;
   background: #f0f3f6;
 }
 
 .certificate-image img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
-/* Foto dokumentasi tambahan di dalam kartu. */
+/* Foto tambahan dalam kartu */
 .activity-image {
-  margin-top: 18px;
+  margin-top: 15px;
   margin-bottom: 0;
 }
 
 /* ========================================
-   8. DAFTAR KEAHLIAN
+   8. KEAHLIAN
 ======================================== */
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 11px;
-  margin-top: 24px;
+  gap: 10px;
+  margin-top: 22px;
 }
 
 .skill-list span {
   display: inline-block;
-  padding: 9px 15px;
+  padding: 8px 13px;
   border: 1px solid #d2e8e6;
   border-radius: 9px;
   background: var(--accent-light);
@@ -415,35 +423,31 @@ main {
    9. PENDIDIKAN DAN PENCAPAIAN
 ======================================== */
 .education-card > p {
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 }
 
 .education-card .activity-image {
-  margin-bottom: 20px;
-}
-
-.education-card .activity-image + h3 {
-  margin-top: 0;
+  margin-bottom: 18px;
 }
 
 /* ========================================
    10. KONTAK
 ======================================== */
 .contact {
-  margin-bottom: 35px;
-  padding: 38px;
+  margin-bottom: 30px;
+  padding: 30px;
   border: 1px solid var(--border);
-  border-radius: 22px;
+  border-radius: 20px;
   background: var(--surface);
   box-shadow: var(--shadow);
 }
 
 .contact h2 {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .contact p {
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   color: var(--muted);
 }
 
@@ -460,7 +464,7 @@ main {
    11. FOOTER
 ======================================== */
 footer {
-  padding: 25px 20px;
+  padding: 22px 20px;
   border-top: 1px solid var(--border);
   background: #ffffff;
   text-align: center;
@@ -487,12 +491,12 @@ footer p {
   }
 
   .hero {
-    min-height: auto;
-    padding: 50px 35px;
+    min-height: 0;
+    padding: 36px 30px;
   }
 
   .section {
-    padding: 50px 0;
+    padding: 40px 0;
   }
 }
 
@@ -505,7 +509,7 @@ footer p {
   }
 
   main {
-    padding: 0 16px;
+    padding: 0 15px;
   }
 
   .navbar {
@@ -517,7 +521,7 @@ footer p {
   }
 
   .nav-links {
-    gap: 8px 13px;
+    gap: 8px 12px;
   }
 
   .nav-links a {
@@ -525,23 +529,23 @@ footer p {
   }
 
   .hero {
-    margin: 18px 0;
-    padding: 35px 23px;
-    border-radius: 18px;
+    margin: 16px 0;
+    padding: 28px 20px;
+    border-radius: 17px;
   }
 
   .profile-image {
-    width: 125px;
-    height: 125px;
-    margin-bottom: 22px;
+    width: 95px;
+    height: 95px;
+    margin-bottom: 17px;
   }
 
   .hero h1 {
-    font-size: 31px;
+    font-size: 29px;
   }
 
   .hero h2 {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .intro {
@@ -549,11 +553,11 @@ footer p {
   }
 
   .section {
-    padding: 40px 0;
+    padding: 32px 0;
   }
 
   .section h2 {
-    font-size: 27px;
+    font-size: 26px;
   }
 
   .project-grid,
@@ -563,7 +567,7 @@ footer p {
   .education-grid,
   .activity-grid {
     grid-template-columns: 1fr;
-    gap: 18px;
+    gap: 16px;
   }
 
   .project-card,
@@ -572,15 +576,28 @@ footer p {
   .certificate-card,
   .education-card,
   .activity-card {
-    padding: 19px;
+    padding: 17px;
   }
 
   .about-image {
-    max-width: 250px;
+    max-width: 155px;
+  }
+
+  .experience-image,
+  .organization-image,
+  .project-image,
+  .activity-image {
+    max-width: 200px;
+    height: 130px;
+  }
+
+  .certificate-image {
+    max-width: 230px;
+    height: 155px;
   }
 
   .contact {
-    padding: 25px 20px;
+    padding: 22px 18px;
   }
 
   .skill-list {
@@ -588,7 +605,7 @@ footer p {
   }
 
   .skill-list span {
-    padding: 8px 11px;
+    padding: 7px 10px;
     font-size: 12px;
   }
 }
