@@ -1,4 +1,4 @@
-
+```css
 /* ========================================
    1. WARNA DAN PENGATURAN DASAR
 ======================================== */
@@ -232,7 +232,7 @@ main {
 ======================================== */
 .about-image {
   width: 100%;
-  max-width: 180px;
+  max-width: 220px;
   aspect-ratio: 4 / 5;
   margin: 20px 0;
   border-radius: 14px;
@@ -338,17 +338,17 @@ main {
 
 /* ========================================
    7. FOTO DOKUMENTASI
-   Ukuran kecil dan konsisten
+   Ukuran diperbesar agar lebih jelas
 ======================================== */
 .experience-image,
 .organization-image,
 .project-image,
 .activity-image {
   width: 100%;
-  max-width: 220px;
-  height: 145px;
-  margin: 0 auto 16px;
-  border-radius: 10px;
+  max-width: 320px;
+  height: 220px;
+  margin: 0 auto 18px;
+  border-radius: 12px;
   overflow: hidden;
   background: #e7eef3;
 }
@@ -369,13 +369,13 @@ main {
   transform: scale(1.02);
 }
 
-/* Sertifikat */
+/* Sertifikat diperbesar */
 .certificate-image {
   width: 100%;
-  max-width: 260px;
-  height: 180px;
-  margin: 0 auto 16px;
-  border-radius: 10px;
+  max-width: 380px;
+  height: 250px;
+  margin: 0 auto 18px;
+  border-radius: 12px;
   overflow: hidden;
   background: #f0f3f6;
 }
@@ -388,7 +388,7 @@ main {
 
 /* Foto tambahan dalam kartu */
 .activity-image {
-  margin-top: 15px;
+  margin-top: 16px;
   margin-bottom: 0;
 }
 
@@ -498,6 +498,19 @@ footer p {
   .section {
     padding: 40px 0;
   }
+
+  .experience-image,
+  .organization-image,
+  .project-image,
+  .activity-image {
+    max-width: 100%;
+    height: 220px;
+  }
+
+  .certificate-image {
+    max-width: 100%;
+    height: 250px;
+  }
 }
 
 /* ========================================
@@ -580,20 +593,20 @@ footer p {
   }
 
   .about-image {
-    max-width: 155px;
+    max-width: 180px;
   }
 
   .experience-image,
   .organization-image,
   .project-image,
   .activity-image {
-    max-width: 200px;
-    height: 130px;
+    max-width: 100%;
+    height: 230px;
   }
 
   .certificate-image {
-    max-width: 230px;
-    height: 155px;
+    max-width: 100%;
+    height: 230px;
   }
 
   .contact {
@@ -630,3 +643,4 @@ a:focus-visible {
     animation-duration: 0.01ms !important;
   }
 }
+```
