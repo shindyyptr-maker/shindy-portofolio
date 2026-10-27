@@ -166,6 +166,10 @@ header {
   overflow: hidden;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
   border: 1px solid var(--border);
+  
+  /* Tambahkan kodingan ini di sini */
+  -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+  mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
 }
 
 .hero-profile-container img {
