@@ -163,18 +163,16 @@ header {
   height: clamp(340px, 40vw, 520px);
   z-index: 2;
   border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  background: transparent; /* Membuat latar belakang kontainer transparan */
+  overflow: visible; /* Diubah dari hidden agar foto bisa keluar batas jika perlu */
+  box-shadow: none;  /* Menghilangkan bayangan kotak */
+  border: none;      /* Menghilangkan garis pinggir kotak */
+  background: transparent; /* Membuat background kotak benar-benar transparan */
 }
-
 .hero-profile-container img {
+  .hero-profile-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  filter: contrast(1.05) brightness(0.95);
-  transition: transform 0.6s ease;
+  object-fit: contain; /* Memastikan seluruh foto tampil tanpa terpotong kotak */
 }
 
 .hero:hover .hero-profile-container img {
