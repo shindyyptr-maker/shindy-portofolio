@@ -162,14 +162,11 @@ header {
   width: clamp(260px, 32vw, 420px);
   height: clamp(340px, 40vw, 520px);
   z-index: 2;
-  border-radius: 24px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
-  border: 1px solid var(--border);
-  
-  /* Tambahkan kodingan ini di sini */
-  -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
-  mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(245, 242, 235, 0.25);
+  background: #1c202c;
 }
 
 .hero-profile-container img {
