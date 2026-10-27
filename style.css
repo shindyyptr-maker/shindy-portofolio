@@ -1,23 +1,30 @@
 
-/* ==========================
-   PENGATURAN DASAR
-========================== */
+/* ========================================
+   1. WARNA DAN PENGATURAN DASAR
+======================================== */
 :root {
-  --navy: #142b3b;
-  --navy-light: #203f52;
-  --teal: #8ed8cf;
-  --background: #f5f8fa;
-  --white: #ffffff;
-  --text: #243746;
-  --muted: #667987;
-  --border: #e0e8ed;
+  --primary: #173b57;
+  --primary-dark: #102b40;
+  --accent: #22a6a1;
+  --accent-light: #e8f7f5;
+  --background: #f5f8fb;
+  --surface: #ffffff;
+  --text: #263746;
+  --muted: #657786;
+  --border: #e0e8ee;
+  --shadow: 0 8px 28px rgba(23, 59, 87, 0.08);
+  --radius: 18px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 body {
@@ -25,281 +32,584 @@ body {
   background: var(--background);
   color: var(--text);
   line-height: 1.7;
+  overflow-wrap: break-word;
 }
 
 a {
+  color: var(--accent);
   text-decoration: none;
-  color: inherit;
+  transition: 0.25s ease;
 }
 
-section {
-  scroll-margin-top: 90px;
+a:hover {
+  color: var(--primary);
 }
 
-/* ==========================
-   NAVIGASI
-========================== */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ========================================
+   2. NAVIGASI
+======================================== */
 header {
-  background: var(--white);
-  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 100;
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
 }
 
 .navbar {
-  max-width: 1100px;
-  margin: auto;
-  padding: 18px 24px;
+  max-width: 1200px;
+  min-height: 76px;
+  margin: 0 auto;
+  padding: 16px 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 24px;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: var(--navy);
+  color: var(--primary);
+  font-size: 26px;
+  font-weight: 800;
+  white-space: nowrap;
 }
 
 .logo span {
-  color: #199e91;
+  color: var(--accent);
 }
 
 .nav-links {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
-  gap: 26px;
+  gap: 10px 18px;
 }
 
 .nav-links a {
-  font-size: 14px;
-  color: var(--muted);
-  transition: color 0.2s;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .nav-links a:hover {
-  color: #168f84;
+  color: var(--accent);
 }
 
-/* ==========================
-   BAGIAN PEMBUKA
-========================== */
+/* ========================================
+   3. BAGIAN UTAMA / HERO
+======================================== */
 .hero {
-  max-width: 1100px;
-  margin: auto;
-  padding: 110px 24px 100px;
+  max-width: 1160px;
+  min-height: 460px;
+  margin: 32px auto;
+  padding: 60px 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: linear-gradient(135deg, #173b57, #245e78);
+  color: #ffffff;
+  border-radius: 26px;
+  box-shadow: 0 16px 40px rgba(23, 59, 87, 0.13);
+  overflow: hidden;
+}
+
+.profile-image {
+  width: 155px;
+  height: 155px;
+  margin-bottom: 25px;
+  border: 5px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .eyebrow {
-  color: #168f84;
+  margin-bottom: 10px;
+  color: var(--accent);
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 800;
   letter-spacing: 2px;
-  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.hero .eyebrow {
+  color: #8de5df;
 }
 
 .hero h1 {
-  color: var(--navy);
-  font-size: clamp(34px, 5vw, 58px);
+  max-width: 800px;
+  margin-bottom: 12px;
+  font-size: clamp(30px, 5vw, 48px);
   line-height: 1.2;
-  max-width: 850px;
-  margin-bottom: 18px;
 }
 
 .hero h1 span {
-  color: #168f84;
+  color: #8de5df;
 }
 
 .hero h2 {
-  color: var(--navy-light);
-  font-size: 22px;
-  font-weight: normal;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  color: #dcebf3;
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 500;
 }
 
 .intro {
-  max-width: 650px;
-  color: var(--muted);
-  margin-bottom: 30px;
+  max-width: 680px;
+  margin-bottom: 27px;
+  color: #e5eef4;
+  font-size: 16px;
 }
 
 .btn {
   display: inline-block;
-  background: var(--navy);
-  color: var(--white);
   padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background 0.2s, transform 0.2s;
+  border-radius: 9px;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.25s ease;
 }
 
 .btn:hover {
-  background: #168f84;
+  background: #168681;
+  color: #ffffff;
   transform: translateY(-2px);
 }
 
-/* ==========================
-   BAGIAN KONTEN
-========================== */
+/* ========================================
+   4. BAGIAN KONTEN
+======================================== */
+main {
+  padding: 0 24px;
+}
+
 .section {
   max-width: 1100px;
-  margin: auto;
-  padding: 75px 24px;
+  margin: 0 auto;
+  padding: 65px 0;
 }
 
 .section h2 {
-  color: var(--navy);
-  font-size: 32px;
   margin-bottom: 22px;
+  color: var(--primary);
+  font-size: clamp(26px, 4vw, 34px);
+  line-height: 1.3;
 }
 
 .section > p:not(.eyebrow) {
-  max-width: 850px;
+  max-width: 900px;
+  margin-bottom: 16px;
   color: var(--muted);
 }
 
-/* ==========================
-   KEAHLIAN
-========================== */
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+.section p {
+  overflow-wrap: anywhere;
 }
 
-.skill-list span {
-  background: var(--white);
-  color: var(--navy);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 10px 18px;
-  font-size: 14px;
-  font-weight: bold;
+.section strong {
+  color: var(--primary);
 }
 
-/* ==========================
-   KARTU PROYEK
-========================== */
-.project-grid {
+/* ========================================
+   5. FOTO TENTANG SAYA
+======================================== */
+.about-image {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 4 / 5;
+  margin: 25px 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #e6edf2;
+  box-shadow: var(--shadow);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========================================
+   6. KARTU DAN GRID
+======================================== */
+.project-grid,
+.experience-grid,
+.organization-grid,
+.certificate-grid,
+.education-grid,
+.activity-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
+  margin-top: 28px;
 }
 
-.project-card {
-  background: var(--white);
+.project-card,
+.experience-card,
+.organization-card,
+.certificate-card,
+.education-card,
+.activity-card {
+  min-width: 0;
+  padding: 24px;
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 28px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.project-card:hover {
+.project-card:hover,
+.experience-card:hover,
+.organization-card:hover,
+.certificate-card:hover,
+.education-card:hover,
+.activity-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(20, 43, 59, 0.08);
+  box-shadow: 0 15px 35px rgba(23, 59, 87, 0.12);
+}
+
+.project-card h3,
+.experience-card h3,
+.organization-card h3,
+.certificate-card h3,
+.education-card h3,
+.activity-card h3 {
+  margin-bottom: 10px;
+  color: var(--primary);
+  font-size: 19px;
+  line-height: 1.45;
+}
+
+.project-card p,
+.experience-card p,
+.organization-card p,
+.certificate-card p,
+.education-card p,
+.activity-card p {
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 14px;
 }
 
 .project-number {
-  color: #168f84;
+  margin-bottom: 12px;
+  color: var(--accent);
   font-size: 11px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin-bottom: 16px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
 }
 
-.project-card h3 {
-  color: var(--navy);
-  font-size: 21px;
-  line-height: 1.4;
-  margin-bottom: 14px;
+.date,
+.meta,
+.subtitle {
+  color: var(--accent) !important;
+  font-size: 13px !important;
+  font-weight: 700;
 }
 
-.project-card p {
-  color: var(--muted);
-  font-size: 14px;
-  margin-bottom: 18px;
+.tech {
+  margin-top: 17px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  color: #177a76 !important;
+  font-size: 12px !important;
+  font-weight: 700;
 }
 
-.project-card .tech {
-  color: #168f84;
-  font-weight: bold;
+/* ========================================
+   7. FOTO DOKUMENTASI
+======================================== */
+.experience-image,
+.organization-image,
+.certificate-image,
+.project-image,
+.activity-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #e7eef3;
+}
+
+.experience-image img,
+.organization-image img,
+.certificate-image img,
+.project-image img,
+.activity-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.experience-card:hover .experience-image img,
+.organization-card:hover .organization-image img,
+.certificate-card:hover .certificate-image img,
+.activity-card:hover .activity-image img {
+  transform: scale(1.035);
+}
+
+/* Sertifikat perlu terlihat jelas dan tidak terpotong. */
+.certificate-image {
+  aspect-ratio: 4 / 3;
+  background: #f0f3f6;
+}
+
+.certificate-image img {
+  object-fit: contain;
+}
+
+/* Foto dokumentasi tambahan di dalam kartu. */
+.activity-image {
+  margin-top: 18px;
   margin-bottom: 0;
 }
 
-/* ==========================
-   KONTAK
-========================== */
+/* ========================================
+   8. DAFTAR KEAHLIAN
+======================================== */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin-top: 24px;
+}
+
+.skill-list span {
+  display: inline-block;
+  padding: 9px 15px;
+  border: 1px solid #d2e8e6;
+  border-radius: 9px;
+  background: var(--accent-light);
+  color: #176c69;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.skill-list span:hover {
+  background: #d6f0ed;
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   9. PENDIDIKAN DAN PENCAPAIAN
+======================================== */
+.education-card > p {
+  margin-bottom: 12px;
+}
+
+.education-card .activity-image {
+  margin-bottom: 20px;
+}
+
+.education-card .activity-image + h3 {
+  margin-top: 0;
+}
+
+/* ========================================
+   10. KONTAK
+======================================== */
 .contact {
-  background: var(--navy);
-  color: var(--white);
-  max-width: none;
-  padding-left: max(24px, calc((100% - 1052px) / 2));
-  padding-right: max(24px, calc((100% - 1052px) / 2));
+  margin-bottom: 35px;
+  padding: 38px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
 .contact h2 {
-  color: var(--white);
+  margin-bottom: 18px;
 }
 
-.contact > p:not(.eyebrow) {
-  color: #d0dde5;
-  margin-bottom: 10px;
+.contact p {
+  margin-bottom: 13px;
+  color: var(--muted);
 }
 
 .contact a {
-  color: var(--teal);
+  overflow-wrap: anywhere;
+  font-weight: 600;
+}
+
+.contact a:hover {
   text-decoration: underline;
-  overflow-wrap: anywhere;
 }
 
-.contact span {
-  overflow-wrap: anywhere;
-}
-
-/* ==========================
-   BAGIAN PALING BAWAH
-========================== */
+/* ========================================
+   11. FOOTER
+======================================== */
 footer {
-  background: #0c1e2a;
-  color: #bdcbd4;
+  padding: 25px 20px;
+  border-top: 1px solid var(--border);
+  background: #ffffff;
   text-align: center;
-  padding: 22px 16px;
+}
+
+footer p {
+  color: var(--muted);
   font-size: 13px;
 }
 
-/* ==========================
-   TAMPILAN HP
-========================== */
-@media (max-width: 650px) {
+/* ========================================
+   12. RESPONSIVE TABLET
+======================================== */
+@media (max-width: 950px) {
   .navbar {
     align-items: flex-start;
     flex-direction: column;
-    padding: 16px 20px;
+    gap: 14px;
   }
 
   .nav-links {
-    gap: 12px 18px;
+    justify-content: flex-start;
+    gap: 10px 16px;
   }
 
   .hero {
-    padding: 75px 20px;
+    min-height: auto;
+    padding: 50px 35px;
   }
 
   .section {
-    padding: 55px 20px;
+    padding: 50px 0;
+  }
+}
+
+/* ========================================
+   13. RESPONSIVE HP
+======================================== */
+@media (max-width: 600px) {
+  html {
+    scroll-padding-top: 145px;
+  }
+
+  main {
+    padding: 0 16px;
+  }
+
+  .navbar {
+    padding: 13px 18px;
+  }
+
+  .logo {
+    font-size: 23px;
+  }
+
+  .nav-links {
+    gap: 8px 13px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .hero {
+    margin: 18px 0;
+    padding: 35px 23px;
+    border-radius: 18px;
+  }
+
+  .profile-image {
+    width: 125px;
+    height: 125px;
+    margin-bottom: 22px;
+  }
+
+  .hero h1 {
+    font-size: 31px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .intro {
+    font-size: 14px;
+  }
+
+  .section {
+    padding: 40px 0;
   }
 
   .section h2 {
-    font-size: 28px;
+    font-size: 27px;
   }
 
-  .project-grid {
+  .project-grid,
+  .experience-grid,
+  .organization-grid,
+  .certificate-grid,
+  .education-grid,
+  .activity-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
   }
 
-  .project-card {
-    padding: 22px;
+  .project-card,
+  .experience-card,
+  .organization-card,
+  .certificate-card,
+  .education-card,
+  .activity-card {
+    padding: 19px;
+  }
+
+  .about-image {
+    max-width: 250px;
+  }
+
+  .contact {
+    padding: 25px 20px;
+  }
+
+  .skill-list {
+    gap: 8px;
+  }
+
+  .skill-list span {
+    padding: 8px 11px;
+    font-size: 12px;
+  }
+}
+
+/* ========================================
+   14. AKSESIBILITAS
+======================================== */
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
   }
 }
