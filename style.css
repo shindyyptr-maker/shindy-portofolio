@@ -438,6 +438,17 @@ footer {
   .big-typography {
     font-size: 90px;
   }
+   /* ========================================
+   FIX: TINGGI KOTAK GALERI ORGANISASI
+======================================== */
+#organization .certificate-card .certificate-image {
+  height: 320px !important; /* Memperbesar tinggi kotak gambar */
+}
+
+#organization .certificate-card .certificate-image img {
+  object-fit: contain !important; /* Memastikan foto tampil utuh tanpa terpotong */
+  background-color: #0d0e12; /* Memberikan latar belakang gelap yang rapi jika ada sisa ruang */
+}
   
   #about, .project-grid, .experience-grid, .organization-grid, .certificate-grid, .education-grid {
     grid-template-columns: 1fr;
