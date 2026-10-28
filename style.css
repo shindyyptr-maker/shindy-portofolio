@@ -7,9 +7,9 @@
   --bg-dark: #0d0e12;
   --surface: #151821;
   --surface-card: #1c202c;
-  --text-primary: #f5f2eb;   /* Krem terang hangat */
+  --text-primary: #f5f2eb;
   --text-muted: #9ea3b0;
-  --accent: #d1b894;        /* Sentuhan Gold/Krem Premium */
+  --accent: #d1b894;
   --accent-bright: #38bdf8;
   --border: rgba(245, 242, 235, 0.12);
   --radius: 20px;
@@ -98,7 +98,7 @@ header {
 }
 
 /* ========================================
-   3. HERO BANNER EDITORIAL (SEPERTI REFERENSI)
+   3. HERO BANNER EDITORIAL (BERSIH & RAPI)
 ======================================== */
 .hero {
   max-width: 1280px;
@@ -227,7 +227,7 @@ header {
 }
 
 /* ========================================
-   4. SEKSI KONTEN & GRID BENTO EDITORIAL
+   4. SEKSI KONTEN & GRID KARTU
 ======================================== */
 main {
   padding: 0 24px;
