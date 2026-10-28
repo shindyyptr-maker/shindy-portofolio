@@ -291,7 +291,7 @@ main {
   object-fit: cover;
 }
 
-/* Grid Kartu */
+/* Grid Kartu Umum */
 .project-grid, .experience-grid, .organization-grid, .certificate-grid, .education-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -310,12 +310,43 @@ main {
   transition: all 0.4s ease;
 }
 
-.project-card:hover, .experience-card:hover, .organization-card:hover, .certificate-card:hover {
+.project-card:hover, .experience-card:hover, .organization-card:hover, .certificate-card:hover, .education-card:hover {
   background: var(--surface-card);
   transform: translateY(-6px);
   border-color: rgba(245, 242, 235, 0.3);
 }
 
+/* Perbaikan Khusus Kartu Pendidikan agar Teks Rapat di Atas */
+.education-card {
+  justify-content: flex-start !important;
+  gap: 12px;
+}
+
+.education-card h3 {
+  margin-bottom: 4px;
+}
+
+.education-card p {
+  margin-bottom: 0;
+}
+
+.education-card .date {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.education-card .activity-image {
+  height: 220px;
+  margin-bottom: 16px;
+}
+
+.education-card .activity-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Gambar & Dokumentasi */
 .experience-image, .organization-image, .project-image, .activity-image, .certificate-image {
   width: 100%;
   height: 240px;
@@ -339,7 +370,7 @@ main {
   padding: 12px;
 }
 
-.project-card h3, .experience-card h3, .organization-card h3, .certificate-card h3, .education-card h3 {
+.project-card h3, .experience-card h3, .organization-card h3, .certificate-card h3 {
   font-size: 22px;
   font-weight: 700;
   color: var(--text-primary);
@@ -408,7 +439,7 @@ footer {
     font-size: 90px;
   }
   
-  #about, .project-grid, .experience-grid, .organization-grid, .certificate-grid {
+  #about, .project-grid, .experience-grid, .organization-grid, .certificate-grid, .education-grid {
     grid-template-columns: 1fr;
   }
 }
