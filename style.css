@@ -9,7 +9,7 @@
   --surface-card: #1c202c;
   --text-primary: #f5f2eb;   /* Krem terang hangat */
   --text-muted: #9ea3b0;
-  --accent: #d1b894;       /* Sentuhan Gold/Krem Premium */
+  --accent: #d1b894;        /* Sentuhan Gold/Krem Premium */
   --accent-bright: #38bdf8;
   --border: rgba(245, 242, 235, 0.12);
   --radius: 20px;
@@ -163,16 +163,16 @@ header {
   height: clamp(340px, 40vw, 520px);
   z-index: 2;
   border-radius: 20px;
-  overflow: visible; /* Diubah dari hidden agar foto bisa keluar batas jika perlu */
-  box-shadow: none;  /* Menghilangkan bayangan kotak */
-  border: none;      /* Menghilangkan garis pinggir kotak */
-  background: transparent; /* Membuat background kotak benar-benar transparan */
+  overflow: visible;
+  box-shadow: none;
+  border: none;
+  background: transparent;
 }
+
 .hero-profile-container img {
-  .hero-profile-container img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Memastikan seluruh foto tampil tanpa terpotong kotak */
+  object-fit: contain;
 }
 
 .hero:hover .hero-profile-container img {
@@ -186,7 +186,7 @@ header {
   align-items: flex-end;
   gap: 30px;
   z-index: 3;
-  margin-top: 360px; /* Memberi ruang untuk elemen tengah di layar sedang */
+  margin-top: 360px;
 }
 
 .hero-name-block h1 {
