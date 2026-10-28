@@ -346,7 +346,19 @@ main {
   object-fit: cover;
 }
 
-/* Gambar & Dokumentasi */
+/* ========================================
+   FIX: TINGGI KOTAK GALERI ORGANISASI
+======================================== */
+#organization .certificate-card .certificate-image {
+  height: 340px !important; /* Memperbesar tinggi kotak gambar agar lebih luas */
+}
+
+#organization .certificate-card .certificate-image img {
+  object-fit: contain !important; /* Memastikan foto tampil utuh tanpa terpotong */
+  background-color: #0d0e12; /* Memberikan latar belakang gelap yang rapi jika ada sisa ruang */
+}
+
+/* Gambar & Dokumentasi Umum */
 .experience-image, .organization-image, .project-image, .activity-image, .certificate-image {
   width: 100%;
   height: 240px;
@@ -438,17 +450,6 @@ footer {
   .big-typography {
     font-size: 90px;
   }
-   /* ========================================
-   FIX: TINGGI KOTAK GALERI ORGANISASI
-======================================== */
-#organization .certificate-card .certificate-image {
-  height: 320px !important; /* Memperbesar tinggi kotak gambar */
-}
-
-#organization .certificate-card .certificate-image img {
-  object-fit: contain !important; /* Memastikan foto tampil utuh tanpa terpotong */
-  background-color: #0d0e12; /* Memberikan latar belakang gelap yang rapi jika ada sisa ruang */
-}
   
   #about, .project-grid, .experience-grid, .organization-grid, .certificate-grid, .education-grid {
     grid-template-columns: 1fr;
