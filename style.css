@@ -1,457 +1,594 @@
-/* ========================================
-   1. PALET WARNA & TIPOGRAFI EDITORIAL
-======================================== */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Shindy Melani Putri, lulusan D3 Manajemen Informatika dengan minat pada teknologi informasi, administrasi, dan pengelolaan data.">
+  <title>Shindy Melani Putri | Portfolio</title>
+  <link rel="stylesheet" href="style.css?v=1.7">
+</head>
 
-:root {
-  --bg-dark: #0d0e12;
-  --surface: #151821;
-  --surface-card: #1c202c;
-  --text-primary: #f5f2eb;
-  --text-muted: #9ea3b0;
-  --accent: #d1b894;
-  --accent-bright: #38bdf8;
-  --border: rgba(245, 242, 235, 0.12);
-  --radius: 20px;
-}
+<body>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <!-- NAVIGASI -->
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="logo">Shindy<span>.</span></a>
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 90px;
-}
+      <div class="nav-links">
+        <a href="#about">Tentang</a>
+        <a href="#experience">Pengalaman</a>
+        <a href="#organization">Organisasi</a>
+        <a href="#education">Pendidikan</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#certificates">Sertifikat</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+      </div>
+    </nav>
+  </header>
 
-body {
-  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  background-color: var(--bg-dark);
-  color: var(--text-primary);
-  line-height: 1.7;
-  overflow-x: hidden;
-}
+  <main>
 
-a {
-  color: var(--text-primary);
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
+    <!-- PROFIL UTAMA (EDITORIAL STYLE HERO) -->
+    <section class="hero" id="home">
+      
+      <!-- Metadata Top -->
+      <div class="hero-top">
+        <span class="role-tag">D3 Manajemen Informatika</span>
+        <span class="arrow-icon">⟶</span>
+      </div>
 
-img {
-  display: block;
-  max-width: 100%;
-}
+      <!-- Typography Raksasa di Belakang -->
+      <div class="big-typography">PORTFOLIO</div>
 
-/* ========================================
-   2. NAVIGASI MINIMALIS
-======================================== */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: rgba(13, 14, 18, 0.88);
-  border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(16px);
-}
+      <!-- Foto Profil (Bertumpuk di Tengah) -->
+      <div class="hero-profile-container">
+        <img
+          src="images/foto-profil-remove.png"
+          alt="Foto profil Shindy Melani Putri"
+          onerror="this.style.display='none'">
+      </div>
 
-.navbar {
-  max-width: 1280px;
-  min-height: 76px;
-  margin: 0 auto;
-  padding: 16px 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+      <!-- Metadata Bottom & Intro -->
+      <div class="hero-bottom">
+        <div class="hero-name-block">
+          <h1>Shindy Melani Putri</h1>
+          <p class="hero-subtext">
+            Lulusan Manajemen Informatika dengan IPK 3,77/4,00. 
+            Memiliki pengalaman dalam administrasi, pengelolaan dokumen, dan organisasi.
+          </p>
+        </div>
+        <div class="hero-action">
+          <a href="#projects" class="btn-editorial">Lihat Proyek <span>→</span></a>
+        </div>
+      </div>
 
-.logo {
-  font-family: 'Oswald', sans-serif;
-  font-size: 28px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--text-primary);
-}
+    </section>
 
-.logo span {
-  color: var(--accent);
-}
 
-.nav-links {
-  display: flex;
-  gap: 24px;
-}
+    <!-- TENTANG SAYA -->
+    <section class="section" id="about">
 
-.nav-links a {
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  transition: color 0.3s ease;
-}
+      <p class="eyebrow">KENALI SAYA</p>
+      <h2>Tentang Saya</h2>
 
-.nav-links a:hover {
-  color: var(--text-primary);
-}
+      <div class="about-image">
+        <img
+          src="images/foto-tentang.jpg"
+          alt="Foto Shindy Melani Putri"
+          loading="lazy">
+      </div>
 
-/* ========================================
-   3. HERO BANNER EDITORIAL (BERSIH & RAPI)
-======================================== */
-.hero {
-  max-width: 1280px;
-  min-height: calc(100vh - 120px);
-  margin: 20px auto 40px;
-  padding: 40px 32px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: #111319;
-  border-radius: 28px;
-  border: 1px solid var(--border);
-  overflow: hidden;
-}
+      <div class="about-text-content">
+        <p>
+          Saya merupakan lulusan D3 Manajemen Informatika dari
+          Universitas Putra Indonesia YPTK Padang dengan IPK 3,77
+          dari skala 4,00. Saya memiliki ketertarikan pada bidang
+          teknologi informasi, administrasi perkantoran, pengolahan
+          data, dan pengelolaan dokumen.
+        </p>
 
-/* Top metadata */
-.hero-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 3;
-}
+        <p>
+          Saya pernah melaksanakan praktik kerja lapangan di Badan
+          Kepegawaian Daerah Provinsi Sumatera Barat serta memiliki
+          pengalaman dalam pelayanan pelanggan dan pengoperasian
+          peralatan fotokopi. Pengalaman organisasi juga membantu
+          saya mengembangkan kemampuan bekerja sama, berkomunikasi,
+          mengatur kegiatan, dan bertanggung jawab terhadap tugas.
+        </p>
 
-.role-tag {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--accent);
-}
+        <p>
+          Saya terbuka untuk mengembangkan kemampuan dan memperoleh
+          pengalaman profesional, baik pada bidang administrasi
+          maupun teknologi informasi.
+        </p>
+      </div>
 
-.arrow-icon {
-  font-size: 24px;
-  color: var(--text-muted);
-}
+    </section>
 
-/* Typography Raksasa di Belakang Foto */
-.big-typography {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Oswald', sans-serif;
-  font-size: clamp(80px, 17vw, 240px);
-  font-weight: 700;
-  letter-spacing: 4px;
-  color: var(--text-primary);
-  opacity: 0.95;
-  white-space: nowrap;
-  user-select: none;
-  z-index: 1;
-}
 
-/* Foto Profil Bertumpuk */
-.hero-profile-container {
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: clamp(260px, 32vw, 420px);
-  height: clamp(340px, 40vw, 520px);
-  z-index: 2;
-  border-radius: 20px;
-  overflow: visible;
-  box-shadow: none;
-  border: none;
-  background: transparent;
-}
+    <!-- PENGALAMAN KERJA DAN MAGANG -->
+    <section class="section" id="experience">
 
-.hero-profile-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
+      <p class="eyebrow">PENGALAMAN</p>
+      <h2>Pengalaman Kerja dan Magang</h2>
 
-.hero:hover .hero-profile-container img {
-  transform: scale(1.03);
-}
+      <div class="experience-grid">
 
-/* Bottom Metadata & Intro */
-.hero-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 30px;
-  z-index: 3;
-  margin-top: 360px;
-}
+        <article class="experience-card">
 
-.hero-name-block h1 {
-  font-family: 'Oswald', sans-serif;
-  font-size: clamp(32px, 4vw, 54px);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 1.1;
-  color: var(--text-primary);
-  margin-bottom: 8px;
-}
+          <div class="experience-image">
+            <img
+              src="images/dokumentasi-BKD-2.jpeg"
+              alt="Dokumentasi magang di BKD Provinsi Sumatera Barat"
+              loading="lazy">
+          </div>
 
-.hero-subtext {
-  max-width: 480px;
-  font-size: 14px;
-  color: var(--text-muted);
-  line-height: 1.6;
-}
+          <p class="date">5–29 Agustus 2025</p>
 
-.btn-editorial {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 28px;
-  border-radius: 40px;
-  background: var(--text-primary);
-  color: var(--bg-dark);
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
-}
+          <h3>Praktik Kerja Lapangan</h3>
 
-.btn-editorial:hover {
-  background: var(--accent);
-  color: #000;
-  transform: translateY(-2px);
-}
+          <p><strong>Badan Kepegawaian Daerah Provinsi Sumatera Barat</strong></p>
 
-/* ========================================
-   4. SEKSI KONTEN & GRID KARTU
-======================================== */
-main {
-  padding: 0 24px;
-}
+          <p>
+            Membantu kegiatan pelayanan dan administrasi surat
+            masuk, mulai dari menerima dokumen, memasukkan data
+            ke sistem internal, mencetak kartu kendali, hingga
+            mendistribusikan surat ke bagian terkait.
+          </p>
 
-.section {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 90px 0;
-  border-bottom: 1px solid var(--border);
-}
+          <p>
+            Turut membantu pengarsipan dokumen dan pencatatan
+            administrasi agar dokumen tersusun dengan rapi.
+          </p>
 
-.eyebrow {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 12px;
-}
+          <p class="tech">Administrasi · Pengarsipan · Input Data</p>
 
-.section h2 {
-  font-family: 'Oswald', sans-serif;
-  font-size: clamp(32px, 4vw, 48px);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--text-primary);
-  margin-bottom: 20px;
-}
+        </article>
 
-.section > p:not(.eyebrow) {
-  max-width: 760px;
-  color: var(--text-muted);
-  font-size: 16px;
-  margin-bottom: 30px;
-}
 
-/* Layout Tentang Saya */
-#about {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 50px;
-  align-items: center;
-}
+        <article class="experience-card">
 
-#about .eyebrow, #about h2 {
-  grid-column: 1 / -1;
-}
+          <div class="experience-image">
+            <img
+              src="images/dokumentasi%20BKD.jpeg"
+              alt="Dokumentasi kegiatan selama magang"
+              loading="lazy">
+          </div>
 
-.about-image {
-  width: 100%;
-  height: 400px;
-  border-radius: 20px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-}
+          <p class="date">Dokumentasi pendukung</p>
 
-.about-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+          <h3>Kegiatan Administrasi dan Pelayanan</h3>
 
-/* Grid Kartu Umum */
-.project-grid, .experience-grid, .organization-grid, .certificate-grid, .education-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-top: 36px;
-}
+          <p>
+            Dokumentasi tambahan selama kegiatan praktik kerja
+            lapangan yang mendukung pengalaman dalam lingkungan
+            kerja, pelayanan, dan administrasi perkantoran.
+          </p>
 
-.project-card, .experience-card, .organization-card, .certificate-card, .education-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: all 0.4s ease;
-}
+          <p class="tech">Pelayanan · Ketelitian · Kerja Sama</p>
 
-.project-card:hover, .experience-card:hover, .organization-card:hover, .certificate-card:hover, .education-card:hover {
-  background: var(--surface-card);
-  transform: translateY(-6px);
-  border-color: rgba(245, 242, 235, 0.3);
-}
+        </article>
 
-/* Perbaikan Khusus Kartu Pendidikan agar Teks Rapat di Atas */
-.education-card {
-  justify-content: flex-start !important;
-  gap: 12px;
-}
 
-.education-card h3 {
-  margin-bottom: 4px;
-}
+        <article class="experience-card">
 
-.education-card p {
-  margin-bottom: 0;
-}
+          <h3>Pengalaman Operasional dan Pelayanan</h3>
 
-.education-card .date {
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
+          <p><strong>TB Razaqi Jaya</strong></p>
 
-.education-card .activity-image {
-  height: 220px;
-  margin-bottom: 16px;
-}
+          <p>
+            Memiliki pengalaman membantu pekerjaan operasional,
+            seperti penggunaan mesin fotokopi, pemindaian dokumen,
+            pengeditan dan pencetakan foto, serta membantu
+            kebutuhan pelanggan.
+          </p>
 
-.education-card .activity-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+          <p class="tech">Pelayanan Pelanggan · Dokumen · Operasional</p>
 
-/* ========================================
-   FIX: TINGGI KOTAK GALERI ORGANISASI
-======================================== */
-#organization .certificate-card .certificate-image {
-  height: 340px !important; /* Memperbesar tinggi kotak gambar agar lebih luas */
-}
+        </article>
 
-#organization .certificate-card .certificate-image img {
-  object-fit: contain !important; /* Memastikan foto tampil utuh tanpa terpotong */
-  background-color: #0d0e12; /* Memberikan latar belakang gelap yang rapi jika ada sisa ruang */
-}
+      </div>
+    </section>
 
-/* Gambar & Dokumentasi Umum */
-.experience-image, .organization-image, .project-image, .activity-image, .certificate-image {
-  width: 100%;
-  height: 240px;
-  margin-bottom: 24px;
-  border-radius: 14px;
-  overflow: hidden;
-  background: #090a0d;
-  border: 1px solid var(--border);
-}
 
-.experience-image img, .organization-image img, .project-image img, .activity-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+    <!-- ORGANISASI (Peran & Galeri Dokumentasi Fleksibel) -->
+    <section class="section" id="organization">
 
-.certificate-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 12px;
-}
+      <p class="eyebrow">PENGEMBANGAN DIRI</p>
+      <h2>Pengalaman Organisasi</h2>
+      
+      <p>
+        Rekam jejak keaktifan dalam berorganisasi dan kepanitiaan guna mengasah kemampuan kepemimpinan serta kerja sama tim.
+      </p>
 
-.project-card h3, .experience-card h3, .organization-card h3, .certificate-card h3 {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 12px;
-}
+      <div class="organization-grid">
 
-.date {
-  display: inline-block;
-  font-size: 12px !important;
-  font-weight: 700;
-  color: var(--accent) !important;
-  letter-spacing: 1px;
-  margin-bottom: 12px;
-}
+        <article class="organization-card">
+          <h3>Anggota Divisi Litbang</h3>
+          <p><strong>Himpunan Manajemen Informatika</strong></p>
+          <p>
+            Berpartisipasi dalam kegiatan organisasi dan mendukung pelaksanaan program kerja divisi sesuai dengan tanggung jawab yang diberikan.
+          </p>
+        </article>
 
-/* Skill Tags */
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
+        <article class="organization-card">
+          <h3>Kepala Bagian Divisi PSDM</h3>
+          <p><strong>Himpunan Manajemen Informatika</strong></p>
+          <p>
+            Membantu mengoordinasikan kegiatan pengembangan sumber daya manusia, mendukung kerja sama antaranggota, dan menjalankan program kerja divisi.
+          </p>
+        </article>
 
-.skill-list span {
-  padding: 10px 20px;
-  border-radius: 30px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--text-primary);
-  font-size: 14px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
+        <article class="organization-card">
+          <h3>Ketua Pelaksana Bakti Sosial</h3>
+          <p><strong>Himpunan Manajemen Informatika</strong></p>
+          <p>
+            Bertanggung jawab mengoordinasikan persiapan, pembagian tugas, dan pelaksanaan kegiatan bakti sosial bersama anggota panitia.
+          </p>
+        </article>
 
-.skill-list span:hover {
-  background: var(--text-primary);
-  color: var(--bg-dark);
-}
+        <article class="organization-card">
+          <h3>Panitia Konsumsi HIRM</h3>
+          <p><strong>Himpunan Manajemen Informatika</strong></p>
+          <p>
+            Mendukung kebutuhan konsumsi kegiatan serta membantu memastikan persiapan dan pelaksanaan tugas panitia berjalan dengan baik.
+          </p>
+        </article>
 
-/* Kontak */
-.contact {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 28px;
-  padding: 50px;
-}
+      </div>
 
-footer {
-  padding: 40px;
-  text-align: center;
-  color: var(--text-muted);
-  font-size: 13px;
-  border-top: 1px solid var(--border);
-}
+      <!-- Galeri Dokumentasi Organisasi Fleksibel -->
+      <div style="margin-top: 50px;">
+        <p class="eyebrow" style="margin-bottom: 16px;">GALERI</p>
+        <h3 style="font-family: 'Oswald', sans-serif; font-size: 28px; text-transform: uppercase; margin-bottom: 24px; color: var(--text-primary);">Dokumentasi Kegiatan Organisasi</h3>
+        
+        <div class="certificate-grid">
+          <div class="certificate-card" style="padding: 16px;">
+            <div class="certificate-image" style="margin-bottom: 0; height: 260px;">
+              <img src="images/organisasi%20litbang.jpeg" alt="Dokumentasi Organisasi" loading="lazy" style="object-fit: cover;">
+            </div>
+          </div>
+          <div class="certificate-card" style="padding: 16px;">
+            <div class="certificate-image" style="margin-bottom: 0; height: 260px;">
+              <img src="images/organisasi-psdm.jpeg" alt="Dokumentasi Organisasi" loading="lazy" style="object-fit: cover;">
+            </div>
+          </div>
+          <div class="certificate-card" style="padding: 16px;">
+            <div class="certificate-image" style="margin-bottom: 0; height: 260px;">
+              <img src="images/kegiatan-bakti-sosial.jpeg" alt="Dokumentasi Organisasi" loading="lazy" style="object-fit: cover;">
+            </div>
+          </div>
+          <div class="certificate-card" style="padding: 16px;">
+            <div class="certificate-image" style="margin-bottom: 0; height: 260px;">
+              <img src="images/kepanitiaan-hirm.jpeg" alt="Dokumentasi Organisasi" loading="lazy" style="object-fit: cover;">
+            </div>
+          </div>
+          <div class="certificate-card" style="padding: 16px;">
+            <div class="certificate-image" style="margin-bottom: 0; height: 260px;">
+              <img src="images/kepanitiaan-hirm2.jpeg" alt="Dokumentasi Organisasi" loading="lazy" style="object-fit: cover;">
+            </div>
+          </div>
+          <div class="certificate-card" style="padding: 16px;">
+            <div class="certificate-image" style="margin-bottom: 0; height: 260px;">
+              <img src="images/foto-organisasi.jpeg" alt="Dokumentasi Organisasi" loading="lazy" style="object-fit: cover;">
+            </div>
+          </div>
+          <div class="certificate-card" style="padding: 16px;">
+            <div class="certificate-image" style="margin-bottom: 0; height: 260px;">
+              <img src="images/kepanitiaan.jpeg" alt="Dokumentasi Organisasi" loading="lazy" style="object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
 
-/* ========================================
-   5. RESPONSIF MOBILE
-======================================== */
-@media (max-width: 900px) {
-  .hero-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 280px;
-  }
-  
-  .big-typography {
-    font-size: 90px;
-  }
-  
-  #about, .project-grid, .experience-grid, .organization-grid, .certificate-grid, .education-grid {
-    grid-template-columns: 1fr;
-  }
-}
+    </section>
+
+
+    <!-- PENDIDIKAN DAN PENCAPAIAN -->
+    <section class="section" id="education">
+
+      <p class="eyebrow">LATAR BELAKANG AKADEMIK</p>
+      <h2>Pendidikan dan Pencapaian</h2>
+
+      <div class="education-grid">
+
+        <article class="education-card">
+
+          <h3>Universitas Putra Indonesia YPTK Padang</h3>
+
+          <p><strong>D3 Manajemen Informatika</strong></p>
+
+          <p class="date">September 2023 – Agustus 2026</p>
+
+          <p>Indeks Prestasi Kumulatif: 3,77/4,00</p>
+
+          <p>
+            Mempelajari dasar-dasar teknologi informasi,
+            pengelolaan data, basis data, dan pengembangan
+            aplikasi sebagai bagian dari pembelajaran akademik.
+          </p>
+
+        </article>
+
+
+        <article class="education-card">
+
+          <div class="activity-image">
+            <img
+              src="images/dokumentasi-lulusan-terbaik.jpeg"
+              alt="Dokumentasi pencapaian akademik"
+              loading="lazy">
+          </div>
+
+          <h3>Pencapaian Akademik</h3>
+
+          <p>
+            Dokumentasi pencapaian selama menempuh pendidikan
+            di Universitas Putra Indonesia YPTK Padang.
+          </p>
+
+          <div class="activity-image">
+            <img
+              src="images/dokumentasi-lulusan-terbaik2.jpeg"
+              alt="Dokumentasi tambahan pencapaian akademik"
+              loading="lazy">
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- KEAHLIAN -->
+    <section class="section" id="skills">
+
+      <p class="eyebrow">KOMPETENSI</p>
+      <h2>Keahlian Saya</h2>
+
+      <p>
+        Berikut adalah bidang keterampilan yang saya pelajari
+        dan kembangkan melalui pendidikan, pengalaman, dan proyek.
+      </p>
+
+      <div class="skill-list">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>PHP Dasar</span>
+        <span>MySQL Dasar</span>
+        <span>Flutter</span>
+        <span>Dart</span>
+        <span>SQLite</span>
+        <span>Microsoft Word</span>
+        <span>Microsoft Excel</span>
+        <span>Microsoft Office</span>
+        <span>Administrasi Data</span>
+        <span>Pengarsipan Dokumen</span>
+        <span>Pelayanan Pelanggan</span>
+        <span>Kerja Sama Tim</span>
+      </div>
+
+    </section>
+
+
+    <!-- SERTIFIKAT -->
+    <section class="section" id="certificates">
+
+      <p class="eyebrow">PELATIHAN DAN SERTIFIKASI</p>
+      <h2>Sertifikat</h2>
+
+      <p>
+        Sertifikat pelatihan dan pembelajaran yang mendukung
+        pengembangan kompetensi di bidang teknologi informasi
+        serta pengolahan data.
+      </p>
+
+      <div class="certificate-grid">
+
+        <article class="certificate-card">
+
+          <div class="certificate-image">
+            <img
+              src="images/Sertifikat%20HCIA.jpeg"
+              alt="Sertifikat HCIA openGauss"
+              loading="lazy">
+          </div>
+
+          <h3>HCIA-openGauss V1.0</h3>
+
+          <p>Huawei ICT Academy</p>
+
+          <p>
+            Pelatihan dan sertifikasi pembelajaran terkait
+            teknologi basis data openGauss.
+          </p>
+
+        </article>
+
+
+        <article class="certificate-card">
+
+          <div class="certificate-image">
+            <img
+              src="images/Sertifikat%20HCIP.jpeg"
+              alt="Sertifikat HCIP openGauss"
+              loading="lazy">
+          </div>
+
+          <h3>HCIP-openGauss V1.0</h3>
+
+          <p>Huawei ICT Academy</p>
+
+          <p>
+            Pembelajaran lanjutan terkait teknologi basis data
+            openGauss.
+          </p>
+
+        </article>
+
+
+        <article class="certificate-card">
+
+          <div class="certificate-image">
+            <img
+              src="images/Sertifikat%20HCIE.jpeg"
+              alt="Sertifikat HCIE openGauss"
+              loading="lazy">
+          </div>
+
+          <h3>HCIE-openGauss V1.0</h3>
+
+          <p>Huawei ICT Academy</p>
+
+          <p>
+            Pembelajaran lanjutan terkait teknologi basis data
+            openGauss sesuai dengan sertifikat yang diperoleh.
+          </p>
+
+        </article>
+
+
+        <article class="certificate-card">
+
+          <div class="certificate-image">
+            <img
+              src="images/sertifikat-excel.jpg"
+              alt="Sertifikat Microsoft Excel"
+              loading="lazy">
+          </div>
+
+          <h3>Introduction to MS Excel</h3>
+
+          <p>Simplilearn SkillUp</p>
+
+          <p>
+            Pembelajaran dasar Microsoft Excel untuk mendukung
+            pengolahan data dan pekerjaan administrasi.
+          </p>
+
+        </article>
+
+
+        <article class="certificate-card">
+
+          <div class="certificate-image">
+            <img
+              src="images/sertifikat-hp.jpg"
+              alt="Sertifikat Sains dan Analitik Data"
+              loading="lazy">
+          </div>
+
+          <h3>Data Science &amp; Analytics</h3>
+
+          <p>HP LIFE</p>
+
+          <p>
+            Pembelajaran mengenai dasar sains data dan analitik
+            untuk memahami informasi serta mendukung pengambilan
+            keputusan.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROYEK -->
+    <section class="section" id="projects">
+
+      <p class="eyebrow">HASIL KARYA</p>
+      <h2>Proyek Saya</h2>
+
+      <p>
+        Beberapa proyek yang berkaitan dengan pembelajaran
+        dan pengembangan aplikasi.
+      </p>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+
+          <div class="project-number">01 / WEB DEVELOPMENT</div>
+
+          <h3>Sistem Absensi dan Jadwal Shift Karyawan</h3>
+
+          <p>
+            Perancangan sistem berbasis web untuk membantu
+            pencatatan kehadiran, pengelolaan jadwal shift,
+            dan rekap laporan kehadiran karyawan di Apotek
+            Kimia Farma Cabang Cengkeh.
+          </p>
+
+          <p class="tech">PHP · MySQL · HTML · CSS</p>
+
+        </article>
+
+
+        <article class="project-card">
+
+          <div class="project-number">02 / MOBILE APPLICATION</div>
+
+          <h3>PetCare Hub</h3>
+
+          <p>
+            Aplikasi pemesanan layanan grooming hewan yang
+            dirancang untuk membantu pengguna memilih layanan,
+            membuat pemesanan, dan melihat status booking.
+          </p>
+
+          <p class="tech">Flutter · Dart · SQLite</p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- KONTAK -->
+    <section class="section contact" id="contact">
+
+      <p class="eyebrow">MARI TERHUBUNG</p>
+
+      <h2>Hubungi Saya</h2>
+
+      <p>
+        Terima kasih telah mengunjungi portofolio saya.
+        Saya terbuka untuk kesempatan kerja dan pengembangan
+        profesional yang sesuai dengan kompetensi saya.
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:shindyyptr@gmail.com">
+          shindyyptr@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <strong>GitHub:</strong>
+        <a
+          href="https://github.com/shindyyptr-maker"
+          target="_blank"
+          rel="noopener noreferrer">
+          Profil GitHub Saya
+        </a>
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Shindy Melani Putri. Dibuat dengan HTML &amp; CSS.</p>
+  </footer>
+
+</body>
+</html>
