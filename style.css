@@ -425,7 +425,7 @@ footer {
 }
 
 /* ========================================
-   5. MODAL / POP-UP GALERI PETCARE HUB
+   5. MODAL / POP-UP GALERI PETCARE HUB (DIPERBESAR)
 ======================================== */
 .modal-overlay {
   display: none;
@@ -447,7 +447,7 @@ footer {
   border: 1px solid var(--border);
   border-radius: 24px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   max-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -503,15 +503,15 @@ footer {
 
 .app-screenshot-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
 }
 
 .screenshot-item {
   background: var(--bg-dark);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 12px;
+  padding: 16px;
   text-align: center;
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
@@ -523,16 +523,16 @@ footer {
 
 .screenshot-item img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  height: 380px;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 .screenshot-item p {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--text-muted);
-  margin-top: 10px;
+  margin-top: 12px;
   margin-bottom: 0;
 }
 
