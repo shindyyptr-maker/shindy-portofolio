@@ -447,7 +447,7 @@ footer {
   border: 1px solid var(--border);
   border-radius: 24px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1250px;
   max-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -538,14 +538,15 @@ footer {
 }
 
 /* ========================================
-   KHUSUS GALERI SISTEM ABSENSI (LANDSCAPE & BESAR)
+   KHUSUS GALERI SISTEM ABSENSI (SANGAT BESAR & 2 KOLOM)
 ======================================== */
 #absensiModal .app-screenshot-grid {
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Kolom lebih lebar untuk landscape */
+  grid-template-columns: repeat(auto-fill, minmax(540px, 1fr)); /* Diperlebar agar tampil 2 kolom yang besar dan lega */
+  gap: 30px;
 }
 
 #absensiModal .screenshot-item img {
-  height: 230px; /* Tinggi proporsional untuk tampilan web/landscape */
+  height: 380px; /* Tinggi gambar diperbesar drastis agar sangat jelas */
   object-fit: cover;
   background-color: #090a0d;
 }
@@ -566,5 +567,13 @@ footer {
   
   #about, .project-grid, .experience-grid, .organization-grid, .certificate-grid, .education-grid {
     grid-template-columns: 1fr;
+  }
+
+  #absensiModal .app-screenshot-grid {
+    grid-template-columns: 1fr; /* Menyesuaikan otomatis jadi 1 kolom di layar HP */
+  }
+
+  #absensiModal .screenshot-item img {
+    height: 240px;
   }
 }
