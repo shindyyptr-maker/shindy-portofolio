@@ -286,81 +286,101 @@
     </section>
 
 
-    <!-- PENDIDIKAN DAN PENCAPAIAN -->
+   <!-- PENDIDIKAN DAN PENCAPAIAN -->
     <section class="section" id="education">
 
       <p class="eyebrow">LATAR BELAKANG AKADEMIK</p>
       <h2>Pendidikan dan Pencapaian</h2>
 
-      <div class="education-grid">
+      <div style="max-width: 900px; margin: 0 auto;">
 
-        <article class="education-card">
+        <article class="education-card" style="width: 100%;">
 
-          <h3>Universitas Putra Indonesia YPTK Padang</h3>
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px; margin-bottom: 24px;">
+            <div>
+              <h3 style="font-size: 24px; margin-bottom: 6px;">Universitas Putra Indonesia YPTK Padang</h3>
+              <p style="font-size: 16px; font-weight: 600; color: var(--text-primary);">D3 Manajemen Informatika</p>
+            </div>
+            <span class="date" style="font-size: 13px !important; padding: 6px 14px; background: var(--surface-card); border-radius: 20px; border: 1px solid var(--border);">September 2023 – Agustus 2026</span>
+          </div>
 
-          <p><strong>D3 Manajemen Informatika</strong></p>
+          <p style="margin-bottom: 16px;"><strong>Indeks Prestasi Kumulatif:</strong> 3,77 / 4,00</p>
 
-          <p class="date">September 2023 – Agustus 2026</p>
-
-          <p>Indeks Prestasi Kumulatif: 3,77/4,00</p>
-
-          <p style="text-align: justify; margin-top: 12px;">
-            Mempelajari dasar-dasar teknologi informasi,
-            pengelolaan data, basis data, dan pengembangan
-            aplikasi sebagai bagian dari pembelajaran akademik.
+          <p style="text-align: justify; margin-bottom: 24px;">
+            Mempelajari dasar-dasar teknologi informasi, pengelolaan data, basis data, dan pengembangan aplikasi sebagai bagian dari pembelajaran akademik.
           </p>
 
-        </article>
+          <!-- GARIS PEMBATAS -->
+          <hr style="border: none; border-top: 1px solid var(--border); margin: 24px 0;">
 
+          <!-- DAFTAR PENCAPAIAN & PRESTASI -->
+          <h3 style="font-family: 'Oswald', sans-serif; font-size: 22px; text-transform: uppercase; margin-bottom: 20px; color: var(--accent);">Pencapaian &amp; Prestasi Akademik</h3>
 
-        <article class="education-card">
-
-          <h3>Pencapaian &amp; Prestasi Akademik</h3>
-
-          <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 16px;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
             
-            <div>
-              <p class="date" style="margin-bottom: 2px;">Oktober 2026</p>
-              <p style="font-weight: 700; color: var(--text-primary); font-size: 15px; margin-bottom: 4px;">Lulusan Terbaik Angkatan &amp; Prodi D3 Manajemen Informatika</p>
-              <p style="text-align: justify; font-size: 13.5px; color: var(--text-muted); margin-bottom: 10px;">Meraih predikat lulusan terbaik di angkatan dan program studi D3 Manajemen Informatika dengan IPK 3,77 dari 4,00.</p>
-              <div class="activity-image" style="height: 180px; margin-bottom: 0;">
-                <img src="images/dokumentasi-lulusan-terbaik.jpeg" alt="Lulusan Terbaik" loading="lazy">
+            <!-- 1. Lulusan Terbaik (Dengan 2 Foto Dokumentasi) -->
+            <div style="background: var(--surface-card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; grid-column: 1 / -1;">
+              <div>
+                <p class="date" style="margin-bottom: 4px;">Oktober 2026</p>
+                <h4 style="font-size: 18px; color: var(--text-primary); margin-bottom: 8px;">Lulusan Terbaik Angkatan &amp; Prodi D3 Manajemen Informatika</h4>
+                <p style="text-align: justify; font-size: 14px; color: var(--text-muted); margin-bottom: 16px;">Meraih predikat lulusan terbaik di angkatan dan program studi D3 Manajemen Informatika dengan IPK 3,77 dari 4,00.</p>
+              </div>
+              
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+                <div class="activity-image" style="height: 200px; margin-bottom: 0;">
+                  <img src="images/dokumentasi-lulusan-terbaik.jpeg" alt="Dokumentasi Lulusan Terbaik 1" loading="lazy" style="object-fit: cover;">
+                </div>
+                <div class="activity-image" style="height: 200px; margin-bottom: 0;">
+                  <img src="images/dokumentasi-lulusan-terbaik2.jpeg" alt="Dokumentasi Lulusan Terbaik 2" loading="lazy" style="object-fit: cover;">
+                </div>
               </div>
             </div>
 
-            <div>
-              <p class="date" style="margin-bottom: 2px;">Juni 2026</p>
-              <p style="font-weight: 700; color: var(--text-primary); font-size: 15px; margin-bottom: 4px;">Juara 2 Kelas Semester 5 &amp; Penerima Beasiswa</p>
-              <p style="text-align: justify; font-size: 13.5px; color: var(--text-muted); margin-bottom: 10px;">Meraih peringkat kedua di kelas pada semester 5 dan memperoleh beasiswa serta piagam penghargaan atas prestasi akademik.</p>
-              <div class="activity-image" style="height: 180px; margin-bottom: 0;">
-                <img src="images/semester5.jpeg" alt="Juara 2 Semester 5" loading="lazy">
+            <!-- 2. Juara 2 Semester 5 -->
+            <div style="background: var(--surface-card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <p class="date" style="margin-bottom: 4px;">Juni 2026</p>
+                <h4 style="font-size: 16px; color: var(--text-primary); margin-bottom: 8px;">Juara 2 Kelas Semester 5 &amp; Penerima Beasiswa</h4>
+                <p style="text-align: justify; font-size: 13.5px; color: var(--text-muted); margin-bottom: 14px;">Meraih peringkat kedua di kelas pada semester 5 dan memperoleh beasiswa serta piagam penghargaan atas prestasi akademik.</p>
+              </div>
+              <div class="activity-image" style="height: 160px; margin-bottom: 0;">
+                <img src="images/semester5.jpeg" alt="Juara 2 Semester 5" loading="lazy" style="object-fit: cover;">
               </div>
             </div>
 
-            <div>
-              <p class="date" style="margin-bottom: 2px;">November 2025</p>
-              <p style="font-weight: 700; color: var(--text-primary); font-size: 15px; margin-bottom: 4px;">Juara 3 Kelas Semester 4</p>
-              <p style="text-align: justify; font-size: 13.5px; color: var(--text-muted); margin-bottom: 10px;">Meraih peringkat ketiga di kelas pada semester 4 dan memperoleh piagam penghargaan atas prestasi akademik.</p>
-              <div class="activity-image" style="height: 180px; margin-bottom: 0;">
-                <img src="images/semester4.jpeg" alt="Juara 3 Semester 4" loading="lazy">
+            <!-- 3. Juara 3 Semester 4 -->
+            <div style="background: var(--surface-card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <p class="date" style="margin-bottom: 4px;">November 2025</p>
+                <h4 style="font-size: 16px; color: var(--text-primary); margin-bottom: 8px;">Juara 3 Kelas Semester 4</h4>
+                <p style="text-align: justify; font-size: 13.5px; color: var(--text-muted); margin-bottom: 14px;">Meraih peringkat ketiga di kelas pada semester 4 dan memperoleh piagam penghargaan atas prestasi akademik.</p>
+              </div>
+              <div class="activity-image" style="height: 160px; margin-bottom: 0;">
+                <img src="images/semester4.jpeg" alt="Juara 3 Semester 4" loading="lazy" style="object-fit: cover;">
               </div>
             </div>
 
-            <div>
-              <p class="date" style="margin-bottom: 2px;">Mei 2025</p>
-              <p style="font-weight: 700; color: var(--text-primary); font-size: 15px; margin-bottom: 4px;">Juara 3 Kelas Semester 3</p>
-              <p style="text-align: justify; font-size: 13.5px; color: var(--text-muted); margin-bottom: 10px;">Meraih peringkat ketiga di kelas pada semester 3 dan memperoleh piagam penghargaan atas prestasi akademik.</p>
-              <div class="activity-image" style="height: 180px; margin-bottom: 0;">
-                <img src="images/semester3.jpeg" alt="Juara 3 Semester 3" loading="lazy">
+            <!-- 4. Juara 3 Semester 3 -->
+            <div style="background: var(--surface-card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <p class="date" style="margin-bottom: 4px;">Mei 2025</p>
+                <h4 style="font-size: 16px; color: var(--text-primary); margin-bottom: 8px;">Juara 3 Kelas Semester 3</h4>
+                <p style="text-align: justify; font-size: 13.5px; color: var(--text-muted); margin-bottom: 14px;">Meraih peringkat ketiga di kelas pada semester 3 dan memperoleh piagam penghargaan atas prestasi akademik.</p>
+              </div>
+              <div class="activity-image" style="height: 160px; margin-bottom: 0;">
+                <img src="images/semester3.jpeg" alt="Juara 3 Semester 3" loading="lazy" style="object-fit: cover;">
               </div>
             </div>
 
-            <div>
-              <p class="date" style="margin-bottom: 2px;">Juni 2024</p>
-              <p style="font-weight: 700; color: var(--text-primary); font-size: 15px; margin-bottom: 4px;">Juara 3 Kelas Semester 1</p>
-              <p style="text-align: justify; font-size: 13.5px; color: var(--text-muted); margin-bottom: 10px;">Meraih peringkat ketiga di kelas pada semester 1 dan memperoleh piagam penghargaan atas prestasi akademik.</p>
-              <div class="activity-image" style="height: 180px; margin-bottom: 0;">
-                <img src="images/semester1.jpeg" alt="Juara 3 Semester 1" loading="lazy">
+            <!-- 5. Juara 3 Semester 1 -->
+            <div style="background: var(--surface-card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <p class="date" style="margin-bottom: 4px;">Juni 2024</p>
+                <h4 style="font-size: 16px; color: var(--text-primary); margin-bottom: 8px;">Juara 3 Kelas Semester 1</h4>
+                <p style="text-align: justify; font-size: 13.5px; color: var(--text-muted); margin-bottom: 14px;">Meraih peringkat ketiga di kelas pada semester 1 dan memperoleh piagam penghargaan atas prestasi akademik.</p>
+              </div>
+              <div class="activity-image" style="height: 160px; margin-bottom: 0;">
+                <img src="images/semester1.jpeg" alt="Juara 3 Semester 1" loading="lazy" style="object-fit: cover;">
               </div>
             </div>
 
@@ -371,7 +391,6 @@
       </div>
 
     </section>
-
 
     <!-- KEAHLIAN -->
     <section class="section" id="skills">
