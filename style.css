@@ -223,7 +223,7 @@ header {
 }
 
 /* ========================================
-   4. SEKSI KONTEN & GRID KARTU
+   4. SEKSI KONTEN & GRID KARTU (RATA KIRI-KANAN / JUSTIFY)
 ======================================== */
 main {
   padding: 0 24px;
@@ -259,6 +259,20 @@ main {
   color: var(--text-muted);
   font-size: 16px;
   margin-bottom: 30px;
+  text-align: justify;
+  letter-spacing: 0.2px;
+}
+
+/* Penyesuaian Rata Kiri-Kanan & Kerapian Teks pada Kartu & Konten */
+.about-text-content p,
+.project-card p,
+.experience-card p,
+.organization-card p,
+.certificate-card p,
+.education-card p {
+  text-align: justify;
+  letter-spacing: 0.2px;
+  word-spacing: 0.3px;
 }
 
 #about {
@@ -409,11 +423,20 @@ main {
   color: var(--bg-dark);
 }
 
+/* ========================================
+   BAGIAN KONTAK (DIKECILKAN JARAK & DIRAPIKAN)
+======================================== */
 .contact {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 28px;
   padding: 50px;
+}
+
+.contact p {
+  margin-bottom: 12px; /* Mengurangi jarak spasi antar baris agar lebih rapat dan rapi */
+  line-height: 1.5;
+  text-align: left;
 }
 
 footer {
@@ -541,12 +564,12 @@ footer {
    KHUSUS GALERI SISTEM ABSENSI (SANGAT BESAR & 2 KOLOM)
 ======================================== */
 #absensiModal .app-screenshot-grid {
-  grid-template-columns: repeat(auto-fill, minmax(540px, 1fr)); /* Diperlebar agar tampil 2 kolom yang besar dan lega */
+  grid-template-columns: repeat(auto-fill, minmax(540px, 1fr));
   gap: 30px;
 }
 
 #absensiModal .screenshot-item img {
-  height: 380px; /* Tinggi gambar diperbesar drastis agar sangat jelas */
+  height: 380px;
   object-fit: cover;
   background-color: #090a0d;
 }
@@ -570,7 +593,7 @@ footer {
   }
 
   #absensiModal .app-screenshot-grid {
-    grid-template-columns: 1fr; /* Menyesuaikan otomatis jadi 1 kolom di layar HP */
+    grid-template-columns: 1fr;
   }
 
   #absensiModal .screenshot-item img {
