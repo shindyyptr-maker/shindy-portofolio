@@ -598,4 +598,134 @@
             <div class="screenshot-item"><img src="images/absensi-20.jpeg" alt="Absensi 20" loading="lazy"><p>absensi-20.jpeg</p></div>
             <div class="screenshot-item"><img src="images/absensi-21.jpeg" alt="Absensi 21" loading="lazy"><p>absensi-21.jpeg</p></div>
             <div class="screenshot-item"><img src="images/absensi-22.jpeg" alt="Absensi 22" loading="lazy"><p>absensi-22.jpeg</p></div>
-            <div class="screenshot-item"><img src="images/absensi-23.jpeg" alt="Absensi 23
+            <div class="screenshot-item"><img src="images/absensi-23.jpeg" alt="Absensi 23" loading="lazy"><p>absensi-23.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-24.jpeg" alt="Absensi 24" loading="lazy"><p>absensi-24.jpeg</p></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- MODAL / POP-UP GALERI PETCARE HUB (17 SCREENSHOT) -->
+    <div id="petcareModal" class="modal-overlay">
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          <h2>Dokumentasi PetCare Hub</h2>
+          <button onclick="closePetCareModal()" class="modal-close">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          
+          <!-- KATEGORI 1: USER FLOW -->
+          <h3 class="modal-section-title">1. Antarmuka & Alur Pengguna (User)</h3>
+          <div class="app-screenshot-grid">
+            <div class="screenshot-item"><img src="images/petcare-1.jpeg" alt="PetCare 1" loading="lazy"><p>petcare-1.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/petcare-2.jpeg" alt="PetCare 2" loading="lazy"><p>petcare-2.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/petcare-3.jpeg" alt="PetCare 3" loading="lazy"><p>petcare-3.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/petcare-4.jpeg" alt="PetCare 4" loading="lazy"><p>petcare-4.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/petcare-5.jpeg" alt="PetCare 5" loading="lazy"><p>petcare-5.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/petcare-6.jpeg" alt="PetCare 6" loading="lazy"><p>petcare-6.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/petcare-15.jpeg" alt="PetCare 15" loading="lazy"><p>petcare-15.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/petcare-16.jpeg" alt="PetCare 16" loading="lazy"><p>petcare-16.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/petcare-17.jpeg" alt="PetCare 17" loading="lazy"><p>petcare-17.jpeg</p></div>
+          </div>
+
+          <!-- KATEGORI 2: ADMIN PANEL -->
+          <h3 class="modal-section-title" style="margin-top: 40px;">2. Panel Pengelolaan Admin (Admin)</h3>
+          <div class="app-screenshot-grid">
+            <div class="screenshot-item"><img src="images/petcare-7.jpeg" alt="PetCare 7" loading="lazy"><p>petcare-7.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/petcare-8.jpeg" alt="PetCare 8" loading="lazy"><p>petcare-8.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/petcare-9.jpeg" alt="PetCare 9" loading="lazy"><p>petcare-9.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/petcare-10.jpeg" alt="PetCare 10" loading="lazy"><p>petcare-10.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/petcare-11.jpeg" alt="PetCare 11" loading="lazy"><p>petcare-11.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/petcare-12.jpeg" alt="PetCare 12" loading="lazy"><p>petcare-12.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/petcare-13.jpeg" alt="PetCare 13" loading="lazy"><p>petcare-13.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/petcare-14.jpeg" alt="PetCare 14" loading="lazy"><p>petcare-14.jpeg</p></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- SCRIPT KONTROL KEDUA POP-UP GALERI -->
+    <script>
+      function openAbsensiModal() {
+        document.getElementById('absensiModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeAbsensiModal() {
+        document.getElementById('absensiModal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+
+      function openPetCareModal() {
+        document.getElementById('petcareModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closePetCareModal() {
+        document.getElementById('petcareModal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+
+      window.onclick = function(event) {
+        var modalAbsensi = document.getElementById('absensiModal');
+        var modalPetCare = document.getElementById('petcareModal');
+        if (event.target == modalAbsensi) {
+          closeAbsensiModal();
+        }
+        if (event.target == modalPetCare) {
+          closePetCareModal();
+        }
+      }
+    </script>
+
+
+    <!-- KONTAK -->
+    <section class="section contact" id="contact">
+
+      <p class="eyebrow">MARI TERHUBUNG</p>
+
+      <h2>Hubungi Saya</h2>
+
+      <p>
+        Terima kasih telah mengunjungi portofolio saya.
+        Saya terbuka untuk kesempatan kerja dan pengembangan
+        profesional yang sesuai dengan kompetensi saya.
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:shindyyptr@gmail.com">
+          shindyyptr@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <strong>GitHub:</strong>
+        <a
+          href="https://github.com/shindyyptr-maker"
+          target="_blank"
+          rel="noopener noreferrer">
+          Profil GitHub Saya
+        </a>
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Shindy Melani Putri. Dibuat dengan HTML &amp; CSS.</p>
+  </footer>
+
+</body>
+</html>
