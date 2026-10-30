@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portofolio Shindy Melani Putri, lulusan D3 Manajemen Informatika dengan minat pada teknologi informasi, administrasi, dan pengelolaan data.">
   <title>Shindy Melani Putri | Portfolio</title>
-  <link rel="stylesheet" href="style.css?v=1.9">
+  <link rel="stylesheet" href="style.css?v=2.0">
 </head>
 
 <body>
@@ -193,7 +193,7 @@
     </section>
 
 
-    <!-- ORGANISASI (Peran & Galeri Dokumentasi Fleksibel) -->
+    <!-- ORGANISASI -->
     <section class="section" id="organization">
 
       <p class="eyebrow">PENGEMBANGAN DIRI</p>
@@ -239,7 +239,7 @@
 
       </div>
 
-      <!-- Galeri Dokumentasi Organisasi Fleksibel -->
+      <!-- Galeri Dokumentasi Organisasi -->
       <div style="margin-top: 50px;">
         <p class="eyebrow" style="margin-bottom: 16px;">GALERI</p>
         <h3 style="font-family: 'Oswald', sans-serif; font-size: 28px; text-transform: uppercase; margin-bottom: 24px; color: var(--text-primary);">Dokumentasi Kegiatan Organisasi</h3>
@@ -511,6 +511,7 @@
 
       <div class="project-grid">
 
+        <!-- KARTU PROYEK 1: SISTEM ABSENSI (24 SCREENSHOT) -->
         <article class="project-card">
 
           <div class="project-number">01 / WEB DEVELOPMENT</div>
@@ -526,10 +527,16 @@
 
           <p class="tech">PHP · MySQL · HTML · CSS</p>
 
+          <div style="margin-top: 20px;">
+            <button onclick="openAbsensiModal()" class="btn-editorial" style="cursor: pointer; border: none;">
+              Lihat Galeri Sistem Absensi (24 Halaman) <span>→</span>
+            </button>
+          </div>
+
         </article>
 
 
-        <!-- KARTU PROYEK PETCARE HUB DENGAN GALERI 17 SCREENSHOT -->
+        <!-- KARTU PROYEK 2: PETCARE HUB (17 SCREENSHOT) -->
         <article class="project-card">
 
           <div class="project-number">02 / MOBILE APPLICATION</div>
@@ -556,160 +563,39 @@
     </section>
 
 
-    <!-- MODAL / POP-UP GALERI PETCARE HUB (17 SCREENSHOT) -->
-    <div id="petcareModal" class="modal-overlay">
+    <!-- MODAL / POP-UP GALERI SISTEM ABSENSI (24 SCREENSHOT) -->
+    <div id="absensiModal" class="modal-overlay">
       <div class="modal-content">
         
         <div class="modal-header">
-          <h2>Dokumentasi PetCare Hub</h2>
-          <button onclick="closePetCareModal()" class="modal-close">&times;</button>
+          <h2>Dokumentasi Sistem Absensi</h2>
+          <button onclick="closeAbsensiModal()" class="modal-close">&times;</button>
         </div>
 
         <div class="modal-body">
           
-          <!-- KATEGORI 1: USER FLOW -->
-          <h3 class="modal-section-title">1. Antarmuka & Alur Pengguna (User)</h3>
+          <h3 class="modal-section-title">Dokumentasi Antarmuka Web (1 - 24)</h3>
           <div class="app-screenshot-grid">
-            <div class="screenshot-item">
-              <img src="images/petcare-1.jpeg" alt="PetCare 1" loading="lazy">
-              <p>petcare-1.jpeg</p>
-            </div>
-            <div class="screenshot-item">
-              <img src="images/petcare-2.jpeg" alt="PetCare 2" loading="lazy">
-              <p>petcare-2.jpeg</p>
-            </div>
-            <div class="screenshot-item">
-              <img src="images/petcare-3.jpeg" alt="PetCare 3" loading="lazy">
-              <p>petcare-3.jpeg</p>
-            </div>
-            <div class="screenshot-item">
-              <img src="images/petcare-4.jpeg" alt="PetCare 4" loading="lazy">
-              <p>petcare-4.jpeg</p>
-            </div>
-            <div class="screenshot-item">
-              <img src="images/petcare-5.jpeg" alt="PetCare 5" loading="lazy">
-              <p>petcare-5.jpeg</p>
-            </div>
-            <div class="screenshot-item">
-              <img src="images/petcare-6.jpeg" alt="PetCare 6" loading="lazy">
-              <p>petcare-6.jpeg</p>
-            </div>
-            <div class="screenshot-item">
-              <img src="images/petcare-15.jpeg" alt="PetCare 15" loading="lazy">
-              <p>petcare-15.jpeg</p>
-            </div>
-            <div class="screenshot-item">
-              <img src="images/petcare-16.jpeg" alt="PetCare 16" loading="lazy">
-              <p>petcare-16.jpeg</p>
-            </div>
-            <div class="screenshot-item">
-              <img src="images/petcare-17.jpeg" alt="PetCare 17" loading="lazy">
-              <p>petcare-17.jpeg</p>
-            </div>
-          </div>
-
-          <!-- KATEGORI 2: ADMIN PANEL -->
-          <h3 class="modal-section-title" style="margin-top: 40px;">2. Panel Pengelolaan Admin (Admin)</h3>
-          <div class="app-screenshot-grid">
-            <div class="screenshot-item">
-              <img src="images/petcare-7.jpeg" alt="PetCare 7" loading="lazy">
-              <p>petcare-7.jpeg</p>
-            </div>
-            <div class="screenshot-item">
-              <img src="images/petcare-8.jpeg" alt="PetCare 8" loading="lazy">
-              <p>petcare-8.jpeg</p>
-            </div>
-            <div class="screenshot-item">
-              <img src="images/petcare-9.jpeg" alt="PetCare 9" loading="lazy">
-              <p>petcare-9.jpeg</p>
-            </div>
-            <div class="screenshot-item">
-              <img src="images/petcare-10.jpeg" alt="PetCare 10" loading="lazy">
-              <p>petcare-10.jpeg</p>
-            </div>
-            <div class="screenshot-item">
-              <img src="images/petcare-11.jpeg" alt="PetCare 11" loading="lazy">
-              <p>petcare-11.jpeg</p>
-            </div>
-            <div class="screenshot-item">
-              <img src="images/petcare-12.jpeg" alt="PetCare 12" loading="lazy">
-              <p>petcare-12.jpeg</p>
-            </div>
-            <div class="screenshot-item">
-              <img src="images/petcare-13.jpeg" alt="PetCare 13" loading="lazy">
-              <p>petcare-13.jpeg</p>
-            </div>
-            <div class="screenshot-item">
-              <img src="images/petcare-14.jpeg" alt="PetCare 14" loading="lazy">
-              <p>petcare-14.jpeg</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-    <!-- SCRIPT KONTROL POP-UP GALERI -->
-    <script>
-      function openPetCareModal() {
-        document.getElementById('petcareModal').style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-      }
-
-      function closePetCareModal() {
-        document.getElementById('petcareModal').style.display = 'none';
-        document.body.style.overflow = 'auto';
-      }
-
-      window.onclick = function(event) {
-        var modal = document.getElementById('petcareModal');
-        if (event.target == modal) {
-          closePetCareModal();
-        }
-      }
-    </script>
-
-
-    <!-- KONTAK -->
-    <section class="section contact" id="contact">
-
-      <p class="eyebrow">MARI TERHUBUNG</p>
-
-      <h2>Hubungi Saya</h2>
-
-      <p>
-        Terima kasih telah mengunjungi portofolio saya.
-        Saya terbuka untuk kesempatan kerja dan pengembangan
-        profesional yang sesuai dengan kompetensi saya.
-      </p>
-
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:shindyyptr@gmail.com">
-          shindyyptr@gmail.com
-        </a>
-      </p>
-
-      <p>
-        <strong>GitHub:</strong>
-        <a
-          href="https://github.com/shindyyptr-maker"
-          target="_blank"
-          rel="noopener noreferrer">
-          Profil GitHub Saya
-        </a>
-      </p>
-
-    </section>
-
-  </main>
-
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Shindy Melani Putri. Dibuat dengan HTML &amp; CSS.</p>
-  </footer>
-
-</body>
-</html>
+            <div class="screenshot-item"><img src="images/absensi-1.jpeg" alt="Absensi 1" loading="lazy"><p>absensi-1.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-2.jpeg" alt="Absensi 2" loading="lazy"><p>absensi-2.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-3.jpeg" alt="Absensi 3" loading="lazy"><p>absensi-3.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-4.jpeg" alt="Absensi 4" loading="lazy"><p>absensi-4.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-5.jpeg" alt="Absensi 5" loading="lazy"><p>absensi-5.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-6.jpeg" alt="Absensi 6" loading="lazy"><p>absensi-6.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-7.jpeg" alt="Absensi 7" loading="lazy"><p>absensi-7.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-8.jpeg" alt="Absensi 8" loading="lazy"><p>absensi-8.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-9.jpeg" alt="Absensi 9" loading="lazy"><p>absensi-9.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-10.jpeg" alt="Absensi 10" loading="lazy"><p>absensi-10.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-11.jpeg" alt="Absensi 11" loading="lazy"><p>absensi-11.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-12.jpeg" alt="Absensi 12" loading="lazy"><p>absensi-12.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-13.jpeg" alt="Absensi 13" loading="lazy"><p>absensi-13.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-14.jpeg" alt="Absensi 14" loading="lazy"><p>absensi-14.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-15.jpeg" alt="Absensi 15" loading="lazy"><p>absensi-15.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-16.jpeg" alt="Absensi 16" loading="lazy"><p>absensi-16.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-17.jpeg" alt="Absensi 17" loading="lazy"><p>absensi-17.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-18.jpeg" alt="Absensi 18" loading="lazy"><p>absensi-18.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-19.jpeg" alt="Absensi 19" loading="lazy"><p>absensi-19.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-20.jpeg" alt="Absensi 20" loading="lazy"><p>absensi-20.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-21.jpeg" alt="Absensi 21" loading="lazy"><p>absensi-21.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-22.jpeg" alt="Absensi 22" loading="lazy"><p>absensi-22.jpeg</p></div>
+            <div class="screenshot-item"><img src="images/absensi-23.jpeg" alt="Absensi 23
